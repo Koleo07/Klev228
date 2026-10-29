@@ -1,0 +1,1454 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Клёв"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#e8eee9" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0d1b19" media="(prefers-color-scheme: dark)"><link rel="apple-touch-icon" href="data:image/png;base64,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"><link rel="icon" type="image/png" href="data:image/png;base64,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"><title>Клёв Подмосковья</title><style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style></head><body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@500;700&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: одна колонка. Водоём → замеры → условия ловли → клёв → воблеры → силикон → расцветки → карта глубин → свои замеры. */
+:root {
+  --bg: #e8eee9;
+  --surface: #f6f9f6;
+  --ink: #12231e;
+  --muted: #5a6d66;
+  --line: #cbd8d0;
+  --accent: #d6452a;      /* поплавок */
+  --water: #1f6f78;
+  --good: #2f8a4f;
+  --warn: #b7791f;
+  --bad: #b8433a;
+  --shallow: #cfe9d9;     /* карта глубин: мель */
+  --deep: #0f3f5c;        /* карта глубин: яма */
+  --t-nat: #7d8f4e;       /* тона расцветок */
+  --t-mid: #b08d2a;
+  --t-bright: #e2591c;
+  --t-uv: #7b48c4;
+  --f-display: "Unbounded", "Onest", system-ui, sans-serif;
+  --f-body: "Onest", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-data: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d1b19; --surface: #14272a; --ink: #e3efe9; --muted: #8fa8a0; --line: #26413f;
+    --accent: #ff6a4a; --water: #5cc0c8; --good: #5cc983; --warn: #e5b14d; --bad: #f0786d;
+    --shallow: #3d6b5a; --deep: #06121c;
+    --t-nat: #a4b872; --t-mid: #d9b54a; --t-bright: #ff7a3d; --t-uv: #a97cf0;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d1b19; --surface: #14272a; --ink: #e3efe9; --muted: #8fa8a0; --line: #26413f;
+  --accent: #ff6a4a; --water: #5cc0c8; --good: #5cc983; --warn: #e5b14d; --bad: #f0786d;
+  --shallow: #3d6b5a; --deep: #06121c;
+  --t-nat: #a4b872; --t-mid: #d9b54a; --t-bright: #ff7a3d; --t-uv: #a97cf0;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.45;
+  padding-block: 20px 40px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+main { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
+h1 { font-family: var(--f-display); font-weight: 700; font-size: 26px; line-height: 1.1; margin: 0; letter-spacing: -0.01em; text-wrap: balance; }
+h2 { font-family: var(--f-display); font-weight: 500; font-size: 14px; margin: 0; letter-spacing: 0.02em; }
+a { color: var(--water); }
+.top { display: flex; flex-direction: column; gap: 6px; }
+.date { font-family: var(--f-data); font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.spotgroups { display: flex; flex-direction: column; gap: 8px; }
+.spotgroup { display: flex; gap: 8px; align-items: center; min-width: 0; }
+.spotgroup .glbl { flex: none; width: 92px; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.spots { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; scrollbar-width: thin; min-width: 0; }
+.spots button { flex: none; font: inherit; font-size: 13px; padding: 7px 12px; border-radius: 999px; border: 1px solid var(--line);
+  background: transparent; color: var(--ink); cursor: pointer; }
+.spots button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.spots button.mine { border-color: var(--accent); }
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, canvas:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.status { font-size: 13px; color: var(--muted); display: flex; gap: 8px; align-items: baseline; }
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--warn); flex: none; }
+.dot.live { background: var(--good); }
+.dot.manual { background: var(--accent); }
+.readouts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.read { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 12px 12px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.read .lbl { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.read .val { font-family: var(--f-data); font-weight: 700; font-size: 30px; line-height: 1; font-variant-numeric: tabular-nums; }
+.read .unit { font-family: var(--f-data); font-size: 12px; color: var(--muted); }
+.read .sub { font-size: 12px; color: var(--muted); min-height: 2.6em; }
+.read.water .val { color: var(--water); }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.panel-head .note { margin: 0; }
+.fish { display: grid; grid-template-columns: 78px minmax(0, 1fr) 70px; gap: 12px; align-items: center; }
+.fish .name { font-weight: 600; }
+.scale { position: relative; height: 10px; border-radius: 999px; background: linear-gradient(90deg, var(--bad), var(--warn) 50%, var(--good)); opacity: 0.85; }
+.float { position: absolute; top: 50%; width: 16px; height: 22px; transform: translate(-50%, -50%); }
+.float::before { content: ""; position: absolute; left: 50%; top: 0; width: 14px; height: 14px; margin-left: -7px; border-radius: 50%;
+  background: var(--accent); border: 2px solid var(--surface); }
+.float::after { content: ""; position: absolute; left: 50%; top: 13px; width: 2px; height: 9px; margin-left: -1px; background: var(--ink); }
+.fish .num { font-family: var(--f-data); font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
+.fish .num small { color: var(--muted); font-weight: 500; }
+.verdict { font-size: 14px; }
+.verdict b { font-weight: 600; }
+.inputs { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 12px; }
+label { display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: var(--muted); }
+input, select, textarea { font: inherit; font-family: var(--f-data); font-size: 15px; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line);
+  background: var(--bg); color: var(--ink); width: 100%; min-width: 0; }
+textarea { font-size: 12px; min-height: 80px; resize: vertical; }
+.row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.ghost { font: inherit; font-size: 13px; padding: 7px 12px; border-radius: 8px; border: 1px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; }
+.ghost.danger { border-color: var(--bad); color: var(--bad); }
+.ghost[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+svg.spark { width: 100%; height: 90px; display: block; }
+.note { font-size: 12px; color: var(--muted); }
+.phase { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+.pill { font-family: var(--f-data); font-size: 11px; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+.pill.hot { border-color: var(--accent); color: var(--accent); }
+
+/* Карточки приманок */
+.lures { display: flex; flex-direction: column; gap: 0; }
+.lure { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 12px; padding: 14px 0; border-top: 1px solid var(--line); }
+.lure:first-child { border-top: 0; padding-top: 2px; }
+.lure .rank { font-family: var(--f-data); font-weight: 700; font-size: 20px; color: var(--muted); line-height: 1.2; }
+.lure:first-child .rank { color: var(--accent); }
+.lure .body { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.lure .title { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.lure .brand { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+.lure .model { font-weight: 600; font-size: 16px; }
+.specs { display: flex; flex-wrap: wrap; gap: 6px; }
+.spec { font-family: var(--f-data); font-size: 12px; padding: 2px 8px; border-radius: 6px; background: var(--bg); border: 1px solid var(--line); white-space: nowrap; }
+.lure dl { margin: 0; display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 4px 10px; font-size: 14px; }
+.lure dt { color: var(--muted); font-size: 12px; padding-top: 2px; }
+.lure dd { margin: 0; min-width: 0; }
+.rig { display: flex; gap: 10px; align-items: center; }
+.rig svg { flex: none; width: 120px; height: 36px; }
+.sw { display: inline-flex; align-items: center; gap: 6px; margin-right: 10px; white-space: nowrap; }
+.sw i { display: inline-block; width: 22px; height: 12px; border-radius: 6px 12px 12px 6px; border: 1px solid var(--line); }
+.colors { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.colors h3 { font-size: 12px; font-weight: 600; margin: 0 0 6px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.colors ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.colors li { display: grid; grid-template-columns: 30px minmax(0, 1fr); gap: 8px; align-items: start; font-size: 14px; }
+.colors li i { width: 30px; height: 16px; border-radius: 8px 16px 16px 8px; border: 1px solid var(--line); margin-top: 2px; }
+.colors li small { display: block; color: var(--muted); font-size: 12px; }
+
+.inbox { font-size: 11px; font-family: var(--f-data); padding: 1px 7px; border-radius: 999px; background: var(--water); color: var(--surface); white-space: nowrap; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.seg button { font: inherit; font-size: 13px; padding: 7px 12px; border: 0; background: transparent; color: var(--ink); cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.sub3 { font-size: 12px; font-weight: 600; margin: 4px 0 8px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.rest { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.rest li { display: grid; grid-template-columns: 84px minmax(0, 1fr) 64px; gap: 10px; align-items: center; padding: 8px 0; border-top: 1px solid var(--line); }
+.rest .rb { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
+.rest .rm { font-weight: 600; min-width: 0; }
+.rest .rm small { display: block; font-weight: 400; font-size: 12px; color: var(--muted); font-family: var(--f-data); }
+.meter { height: 6px; border-radius: 999px; background: var(--bg); border: 1px solid var(--line); overflow: hidden; }
+.meter b { display: block; height: 100%; background: var(--good); }
+.boxlist { display: flex; flex-direction: column; gap: 14px; max-height: 560px; overflow-y: auto; padding-right: 4px; }
+.boxlist h3 { font-size: 12px; font-weight: 600; margin: 0 0 6px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.boxgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 4px 12px; }
+.boxgrid label { flex-direction: row; align-items: center; gap: 8px; font-size: 14px; color: var(--ink); padding: 4px 0; cursor: pointer; }
+.boxgrid input { width: 18px; height: 18px; flex: none; accent-color: var(--water); }
+.boxgrid .del { margin-left: auto; font: inherit; font-size: 12px; border: 0; background: transparent; color: var(--bad); cursor: pointer; padding: 2px 4px; }
+@media (max-width: 440px) { .rest li { grid-template-columns: minmax(0, 1fr) 48px; } .rest .rb { grid-column: 1 / -1; } }
+
+.stack { display: flex; flex-direction: column; gap: 12px; }
+.tonelegend { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 0; font-size: 12px; color: var(--muted); }
+.tonelegend span { display: inline-flex; align-items: center; gap: 5px; }
+i[data-t] { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--line); flex: none; font-style: normal; }
+i[data-t="natural"] { background: var(--t-nat); }
+i[data-t="mid"] { background: var(--t-mid); }
+i[data-t="bright"] { background: var(--t-bright); }
+i[data-t="uv"] { background: var(--t-uv); }
+.chip { display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 999px; font-size: 13px; background: var(--bg); color: var(--ink); max-width: 100%; }
+span.chip:not(:has(button)) { padding: 2px 9px 2px 8px; gap: 5px; }
+.chip.r2 { border-color: var(--good); font-weight: 600; }
+.chip.r0 { opacity: 0.6; }
+.chip button { font: inherit; border: 0; background: transparent; color: var(--ink); cursor: pointer; display: inline-flex; align-items: center; gap: 5px; min-width: 0; }
+.chip .cyc { padding: 3px 4px 3px 8px; }
+.chip .rm { padding: 3px 9px 3px 4px; color: var(--muted); font-size: 15px; line-height: 1; }
+.mycol { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 6px; }
+.bx-item { display: flex; flex-direction: column; gap: 6px; padding: 6px 0; border-top: 1px solid var(--line); }
+.bx-head { display: flex; align-items: center; gap: 8px; }
+.bx-head label { flex-direction: row; align-items: center; gap: 8px; font-size: 14px; color: var(--ink); cursor: pointer; min-width: 0; }
+.bx-head input { width: 18px; height: 18px; flex: none; accent-color: var(--water); }
+.bx-colors { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding-left: 26px; }
+.bx-add { display: inline-flex; gap: 4px; flex: 1 1 180px; min-width: 0; max-width: 300px; }
+.bx-add input { font-family: var(--f-body); font-size: 13px; padding: 4px 8px; }
+.bx-add button { font: inherit; font-size: 13px; padding: 4px 10px; border-radius: 8px; border: 1px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; flex: none; }
+.bx-model { font-weight: 600; font-size: 14px; margin: 10px 0 0; }
+.del { margin-left: auto; font: inherit; font-size: 12px; border: 0; background: transparent; color: var(--bad); cursor: pointer; padding: 2px 4px; }
+
+/* Карта глубин */
+.mapwrap { position: relative; width: 100%; max-width: 100%; aspect-ratio: 1 / 1; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: var(--bg); }
+.mapwrap canvas { width: 100%; height: 100%; display: block; cursor: crosshair; touch-action: manipulation; }
+.legend { display: flex; align-items: center; gap: 8px; font-family: var(--f-data); font-size: 11px; color: var(--muted); }
+.legend .bar { flex: 1; height: 8px; border-radius: 999px; background: linear-gradient(90deg, var(--shallow), var(--deep)); }
+.stats { display: flex; flex-wrap: wrap; gap: 6px; }
+.links { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 13px; }
+details summary { cursor: pointer; font-size: 13px; color: var(--muted); }
+details[open] summary { margin-bottom: 10px; }
+
+@media (max-width: 520px) {
+  .colors { grid-template-columns: minmax(0, 1fr); }
+  .spotgroup { flex-direction: column; align-items: stretch; gap: 4px; }
+  .spotgroup .glbl { width: auto; }
+}
+@media (max-width: 440px) {
+  h1 { font-size: 22px; }
+  .read .val { font-size: 24px; }
+  .fish { grid-template-columns: 64px minmax(0, 1fr) 58px; gap: 8px; }
+  .lure { grid-template-columns: 24px minmax(0, 1fr); gap: 8px; }
+  .lure dl { grid-template-columns: minmax(0, 1fr); gap: 0 0; }
+  .lure dt { padding-top: 6px; }
+}
+@media (prefers-reduced-motion: no-preference) { .float { transition: left 0.5s ease; } }
+
+/* iPhone и Safari: поля 16px, чтобы Safari не увеличивал страницу при вводе; крупнее зоны нажатия */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+button, a, label, canvas { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+@media (pointer: coarse) {
+  input, select, textarea, .bx-add input { font-size: 16px; }
+  .chip .cyc { padding: 6px 4px 6px 10px; }
+  .chip .rm { padding: 6px 12px 6px 6px; font-size: 18px; }
+  .ghost, .seg button, .spots button, .bx-add button { min-height: 40px; }
+  .bx-head input, .boxgrid input { width: 22px; height: 22px; }
+  .del { padding: 8px; }
+}
+</style>
+
+<main>
+  <div class="top">
+    <div class="date" id="date"></div>
+    <h1>Клёв Москвы и области</h1>
+  </div>
+
+  <div class="spotgroups" id="spotgroups"></div>
+
+  <div class="status"><span class="dot" id="dot"></span><span id="statusText">Загрузка…</span></div>
+
+  <section class="readouts" aria-label="Текущие замеры">
+    <div class="read"><span class="lbl">Давление</span><span class="val" id="vP">—</span><span class="unit">мм рт. ст.</span><span class="sub" id="sP"></span></div>
+    <div class="read"><span class="lbl">Воздух</span><span class="val" id="vA">—</span><span class="unit">°C</span><span class="sub" id="sA"></span></div>
+    <div class="read water"><span class="lbl">Вода</span><span class="val" id="vW">—</span><span class="unit">°C</span><span class="sub" id="sW"></span></div>
+  </section>
+
+  <section class="panel" aria-label="Условия ловли">
+    <div class="panel-head"><h2>Условия ловли</h2><span class="phase" id="phase"></span></div>
+    <div class="inputs">
+      <label for="cFish">Ловлю<select id="cFish"><option value="pike">щуку</option><option value="perch">окуня</option><option value="zander">судака</option></select></label>
+      <label for="cTurb">Вода<select id="cTurb"><option value="clear">прозрачная</option><option value="mid">средняя</option><option value="muddy">мутная</option></select></label>
+      <label for="cDepth">Глубина в месте ловли, м<input id="cDepth" type="number" inputmode="decimal" step="0.5" min="0.3" max="25"></label>
+      <label for="cLight">Небо<select id="cLight"><option value="auto">по прогнозу</option><option value="sun">солнце</option><option value="part">переменная облачность</option><option value="cloud">пасмурно</option></select></label>
+      <label for="cCur">Течение<select id="cCur"><option value="0">нет</option><option value="1">слабое</option><option value="2">среднее</option><option value="3">сильное</option></select></label>
+    </div>
+    <p class="note" id="condNote"></p>
+  </section>
+
+  <section class="panel" aria-label="Прогноз клёва">
+    <h2>Клёв сегодня</h2>
+    <div class="verdict" id="verdict"></div>
+    <div id="fishList" style="display:flex;flex-direction:column;gap:16px"></div>
+  </section>
+
+  <section class="panel" aria-label="Воблеры">
+    <div class="panel-head"><h2>Воблеры</h2><span class="note">Zipbaits · Jackal · Pontoon 21 · OSP</span></div>
+    <div class="row">
+      <div class="seg" role="group" aria-label="Откуда подбирать">
+        <button type="button" id="srcAll" aria-pressed="true">Весь каталог</button>
+        <button type="button" id="srcBox" aria-pressed="false">Только моя коробка</button>
+      </div>
+      <span class="note" id="boxInfo"></span>
+    </div>
+    <div class="lures" id="wobblers"></div>
+    <div id="wobRestWrap">
+      <h3 class="sub3">Тоже подойдут</h3>
+      <ul class="rest" id="wobRest"></ul>
+    </div>
+  </section>
+
+  <section class="panel" aria-label="Моя коробка">
+    <div class="panel-head"><h2>Моя коробка</h2><span class="note" id="boxCount"></span></div>
+    <div class="seg" role="group" aria-label="Раздел коробки">
+      <button type="button" id="tabWob" aria-pressed="true">Воблеры</button>
+      <button type="button" id="tabSoft" aria-pressed="false">Силикон</button>
+    </div>
+    <p class="note" id="boxHint"></p>
+    <p class="tonelegend"><span><i data-t="natural"></i>натуральный</span><span><i data-t="mid"></i>контрастный / металлик</span><span><i data-t="bright"></i>яркий</span><span><i data-t="uv"></i>UV</span><span><i data-t=""></i>не определён</span></p>
+    <input id="boxSearch" type="search" placeholder="Поиск: rigge, orbit, fat 3,8…" aria-label="Поиск по коробке">
+    <div id="boxList" class="boxlist"></div>
+    <datalist id="colorNames">
+      <option value="Моторное масло"><option value="Зелёный арбуз (watermelon)"><option value="Green pumpkin"><option value="Призрак (ghost)">
+      <option value="Натуральная плотва"><option value="Уклейка"><option value="Окунь"><option value="Аю"><option value="Серебро"><option value="Золото">
+      <option value="Медь"><option value="Чёрная спинка, серебро"><option value="Fire tiger"><option value="Шартрез"><option value="Лимон"><option value="Кислотный лайм">
+      <option value="Морковный"><option value="Белый перламутр"><option value="Розовая жвачка"><option value="Фиолетовый UV"><option value="Чёрный с красной блёсткой">
+    </datalist>
+    <details id="customDetails">
+      <summary id="customSummary">Добавить свой воблер</summary>
+      <div id="customWob" class="stack">
+        <div class="inputs">
+          <label for="uBrand">Фирма<input id="uBrand" type="text" placeholder="например, Jackal"></label>
+          <label for="uModel">Модель<input id="uModel" type="text" placeholder="например, Shallow First 65"></label>
+          <label for="uKind">Тип<select id="uKind"><option value="minnow">минноу</option><option value="shad">шэд</option><option value="crank">кренк</option><option value="vib">раттлин</option><option value="top">поверхностный</option></select></label>
+          <label for="uBuoy">Плавучесть<select id="uBuoy"><option value="F">плавающий (F)</option><option value="SP" selected>нейтральный (SP)</option><option value="S">тонущий (S)</option></select></label>
+          <label for="uSize">Длина, мм<input id="uSize" type="number" inputmode="numeric" min="20" max="250" value="65"></label>
+          <label for="uG">Вес, г<input id="uG" type="number" inputmode="decimal" step="0.1" min="0.5" max="100" value="6"></label>
+          <label for="uLo">Заглубление от, м<input id="uLo" type="number" inputmode="decimal" step="0.1" min="0" max="10" value="0.3"></label>
+          <label for="uHi">до, м<input id="uHi" type="number" inputmode="decimal" step="0.1" min="0" max="10" value="0.8"></label>
+          <label for="uFish">Основная рыба<select id="uFish"><option value="po">щука и окунь</option><option value="op">окунь и щука</option><option value="p">щука</option><option value="o">окунь</option><option value="oz">окунь и судак</option><option value="zp">судак и щука</option></select></label>
+        </div>
+        <div class="row"><button class="ghost" id="uAdd" type="button">Добавить в коробку</button><span class="note" id="uMsg"></span></div>
+        <p class="note">Заглубление и вес обычно указаны на коробке воблера. SR означает мелкий ход, MR — средний, DR — глубокий.</p>
+      </div>
+      <div id="customSoft" class="stack" hidden>
+        <div class="inputs">
+          <label for="sBrand">Фирма<select id="sBrand"><option>Keitech</option><option>DUO</option><option>Lucky John</option><option value="">другая…</option></select></label>
+          <label for="sBrandOther" id="sBrandOtherWrap" hidden>Название фирмы<input id="sBrandOther" type="text"></label>
+          <label for="sModel">Модель<input id="sModel" type="text" placeholder="например, Swing Impact Fat"></label>
+          <label for="sSize">Размер, дюймы<input id="sSize" type="number" inputmode="decimal" step="0.1" min="1" max="10" value="3"></label>
+          <label for="sKind">Тип<select id="sKind"><option value="shad">виброхвост</option><option value="creature">креатура / рак</option><option value="worm">червь</option><option value="slug">слаг</option></select></label>
+          <label for="sFish">Основная рыба<select id="sFish"><option value="op">окунь и щука</option><option value="po">щука и окунь</option><option value="o">окунь</option><option value="p">щука</option><option value="oz">окунь и судак</option><option value="zp">судак и щука</option></select></label>
+        </div>
+        <div class="row"><button class="ghost" id="sAdd" type="button">Добавить размер</button><span class="note" id="sMsg"></span></div>
+        <p class="note">Если модель уже есть в списке, к ней добавится новый размер. Для DUO впишите точное название с упаковки.</p>
+      </div>
+    </details>
+    <details>
+      <summary>Сохранить или перенести коробку</summary>
+      <div class="stack">
+        <label for="bJson">Коробка в формате JSON: скопируйте, чтобы сохранить, или вставьте, чтобы загрузить<textarea id="bJson" spellcheck="false"></textarea></label>
+        <div class="row"><button class="ghost" id="bCopy" type="button">Скопировать</button><button class="ghost" id="bLoad" type="button">Загрузить из поля</button><span class="note" id="bMsg"></span></div>
+        <p class="note">На iPhone Safari может стереть данные сайта, если страницу не открывать больше недели. Добавьте приложение на экран «Домой» (кнопка «Поделиться», затем «На экран „Домой“»), тогда данные хранятся надёжнее. И время от времени сохраняйте коробку и промеры текстом в Заметках.</p>
+      </div>
+    </details>
+  </section>
+
+  <section class="panel" aria-label="Силикон">
+    <div class="panel-head"><h2>Силикон</h2><span class="note">Keitech · DUO · Lucky John</span></div>
+    <div class="row">
+      <div class="seg" role="group" aria-label="Откуда подбирать силикон">
+        <button type="button" id="softAll" aria-pressed="true">Весь каталог</button>
+        <button type="button" id="softBox" aria-pressed="false">Только моя коробка</button>
+      </div>
+      <span class="note" id="softInfo"></span>
+    </div>
+    <div class="lures" id="softs"></div>
+  </section>
+
+  <section class="panel" aria-label="Расцветки">
+    <h2>Расцветки сегодня</h2>
+    <div class="colors">
+      <div><h3>Воблеры</h3><ul id="colHard"></ul></div>
+      <div><h3>Силикон</h3><ul id="colSoft"></ul></div>
+    </div>
+    <p class="note" id="colNote"></p>
+  </section>
+
+  <section class="panel" aria-label="Карта глубин">
+    <div class="panel-head"><h2 id="mapTitle">Карта глубин</h2><span class="note" id="mapCoords"></span></div>
+    <p class="note" id="mapIntro"></p>
+    <div class="links" id="mapLinks"></div>
+    <div class="mapwrap"><canvas id="depthMap" tabindex="0" aria-label="Карта глубин: нажмите, чтобы поставить точку промера"></canvas></div>
+    <div class="legend"><span id="lgMin">0 м</span><span class="bar"></span><span id="lgMax">—</span></div>
+    <div class="inputs">
+      <label for="mDepth">Глубина новой точки, м<input id="mDepth" type="number" inputmode="decimal" step="0.1" min="0" max="40" value="2"></label>
+      <label for="mSize">Размер участка, м<select id="mSize"><option>60</option><option>100</option><option>150</option><option>250</option><option>400</option><option>800</option></select></label>
+    </div>
+    <div class="row">
+      <button class="ghost" id="mGps" type="button">Точка по GPS</button>
+      <button class="ghost" id="mUndo" type="button">Убрать последнюю</button>
+      <button class="ghost danger" id="mClear" type="button">Очистить карту</button>
+      <span id="mConfirm" hidden class="row"><span class="note">Удалить все точки этого водоёма?</span><button class="ghost danger" id="mYes" type="button">Удалить</button><button class="ghost" id="mNo" type="button">Отмена</button></span>
+    </div>
+    <div class="stats" id="mStats"></div>
+    <p class="note" id="mMsg"></p>
+    <details>
+      <summary>Сохранить или перенести промеры</summary>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <label for="mJson">Точки в формате JSON: скопируйте, чтобы сохранить, или вставьте, чтобы загрузить<textarea id="mJson" spellcheck="false"></textarea></label>
+        <div class="row"><button class="ghost" id="mCopy" type="button">Скопировать</button><button class="ghost" id="mLoad" type="button">Загрузить из поля</button></div>
+      </div>
+    </details>
+  </section>
+
+  <section class="panel" id="sparkPanel" hidden>
+    <h2>Давление за двое суток</h2>
+    <svg class="spark" id="spark" viewBox="0 0 600 90" preserveAspectRatio="none" role="img" aria-label="График давления"></svg>
+    <div class="note" id="sparkNote"></div>
+  </section>
+
+  <section class="panel" aria-label="Свои замеры">
+    <h2>Свои замеры</h2>
+    <div class="inputs">
+      <label for="iP">Давление, мм рт. ст.<input id="iP" type="number" inputmode="decimal" step="1" min="700" max="800"></label>
+      <label for="iA">Воздух, °C<input id="iA" type="number" inputmode="decimal" step="0.5" min="-40" max="45"></label>
+      <label for="iW">Вода, °C<input id="iW" type="number" inputmode="decimal" step="0.5" min="0" max="35"></label>
+      <label for="iT">Давление<select id="iT"><option value="up">растёт</option><option value="flat">стоит</option><option value="down">падает</option></select></label>
+    </div>
+    <div class="row"><button class="ghost" id="reset" type="button">Вернуть данные по умолчанию</button></div>
+  </section>
+
+  <p class="note" id="foot"></p>
+</main>
+
+<script>
+(function () {
+  // type: pond | river | res. cur: течение по умолчанию 0..3. depth: типичная глубина ловли, м.
+  var SPOTS = [
+    { id: 'pond', name: 'Мой пруд', lat: 55.429404, lon: 36.959799, type: 'pond', cur: 0, depth: 2, mine: true },
+    { id: 'pakhra-pod', name: 'Пахра, Подольск', lat: 55.432, lon: 37.553, type: 'river', cur: 1, depth: 2 },
+    { id: 'pakhra-kr', name: 'Пахра, Красная Пахра', lat: 55.415, lon: 37.268, type: 'river', cur: 1, depth: 1.5 },
+    { id: 'msk-zven', name: 'Москва-река, Звенигород', lat: 55.73, lon: 36.86, type: 'river', cur: 1, depth: 2.5 },
+    { id: 'msk', name: 'Москва-река, Москва', lat: 55.75, lon: 37.62, type: 'river', cur: 1, depth: 4 },
+    { id: 'msk-bron', name: 'Москва-река, Бронницы', lat: 55.42, lon: 38.26, type: 'river', cur: 1, depth: 3 },
+    { id: 'kolom', name: 'Ока, Коломна', lat: 55.08, lon: 38.78, type: 'river', cur: 2, depth: 4 },
+    { id: 'serp', name: 'Ока, Серпухов', lat: 54.92, lon: 37.41, type: 'river', cur: 2, depth: 4 },
+    { id: 'istra', name: 'Истринское вдхр.', lat: 56.04, lon: 36.88, type: 'res', cur: 0, depth: 4 },
+    { id: 'ruza', name: 'Рузское вдхр.', lat: 55.73, lon: 36.25, type: 'res', cur: 0, depth: 4 },
+    { id: 'mozh', name: 'Можайское вдхр.', lat: 55.52, lon: 36.0, type: 'res', cur: 0, depth: 5 },
+    { id: 'ozern', name: 'Озернинское вдхр.', lat: 56.05, lon: 36.1, type: 'res', cur: 0, depth: 4 },
+    { id: 'klyaz', name: 'Клязьминское вдхр.', lat: 55.97, lon: 37.62, type: 'res', cur: 0, depth: 3.5 },
+    { id: 'ivan', name: 'Иваньковское вдхр.', lat: 56.73, lon: 37.17, type: 'res', cur: 0, depth: 4 },
+    { id: 'shat', name: 'Шатурские озёра', lat: 55.57, lon: 39.55, type: 'res', cur: 0, depth: 2.5 }
+  ];
+  var GROUPS = [['pond', 'Свой'], ['river', 'Реки'], ['res', 'Водохранилища']];
+  // Рыба: температура воды, °C. [едва клюёт, начало оптимума, конец оптимума, перестаёт]
+  var FISH = {
+    'Щука': [1, 6, 16, 22], 'Окунь': [3, 8, 18, 24], 'Судак': [4, 10, 20, 24], 'Плотва': [2, 8, 18, 24],
+    'Лещ': [5, 12, 20, 25], 'Налим': [0, 1, 6, 11], 'Карась': [8, 15, 24, 28], 'Ротан': [5, 12, 24, 28], 'Голавль': [4, 12, 22, 26]
+  };
+  var FISH_BY_TYPE = {
+    pond: ['Щука', 'Окунь', 'Плотва', 'Карась', 'Ротан'],
+    river: ['Щука', 'Окунь', 'Судак', 'Голавль', 'Плотва', 'Лещ', 'Налим'],
+    res: ['Щука', 'Окунь', 'Судак', 'Плотва', 'Лещ', 'Налим']
+  };
+  var TARGET = { pike: 'Щука', perch: 'Окунь', zander: 'Судак' };
+  // Как быстро вода догоняет воздух за сутки: маленький пруд быстрее, большая река медленнее.
+  var WATER_K = { pond: 0.18, river: 0.1, res: 0.12 };
+  var AIR_N = [-6.5, -5.9, -0.5, 7.5, 14, 17.8, 20, 18, 12, 6, 0, -4.5];
+  var WATER_N = [0.2, 0.2, 0.8, 5.5, 13.5, 19, 22, 20.5, 14.5, 8, 3, 0.5];
+  var PRESS_N = 750;
+
+  // Воблеры. size мм, g граммы, run [от, до] м рабочее заглубление (ориентир), tw — вода °C, где модель работает лучше.
+  // kind: minnow | shad | crank | vib | top
+  // Компактная запись: [бренд, модель, тип, мм, г, плавучесть, глубина от, до, рыба (p щука, o окунь, z судак; первая — основная), вода от, до, погремушка]
+  var BRANDS = ['Zipbaits', 'Jackal', 'Pontoon 21', 'OSP'];
+  var WOB_RAW = [
+    ['Zipbaits', 'Rigge 35F', 'shad', 35, 2.4, 'F', 0.3, 0.6, 'o', 8, 24],
+    ['Zipbaits', 'Rigge 43F', 'shad', 43, 3, 'F', 0.4, 0.8, 'o', 7, 24],
+    ['Zipbaits', 'Rigge 56F', 'shad', 56, 4.5, 'F', 0.5, 1.2, 'op', 6, 24],
+    ['Zipbaits', 'Rigge Deep 56F', 'shad', 56, 5, 'F', 1.8, 2.5, 'oz', 5, 22],
+    ['Zipbaits', 'Rigge 70SP', 'shad', 70, 6.5, 'SP', 0.8, 1.2, 'op', 5, 22],
+    ['Zipbaits', 'Rigge Deep 70F', 'shad', 70, 7.6, 'F', 2, 2.5, 'ozp', 5, 22],
+    ['Zipbaits', 'Rigge 90 SP-SR', 'shad', 90, 9.8, 'SP', 0.8, 1.2, 'po', 4, 22],
+    ['Zipbaits', 'Rigge 90F', 'shad', 90, 11, 'F', 2, 2.5, 'pzo', 5, 22],
+    ['Zipbaits', 'Orbit 65 SP-SR', 'minnow', 65, 5, 'SP', 0.6, 1, 'op', 4, 22],
+    ['Zipbaits', 'Orbit 80 SP-SR', 'minnow', 80, 8.5, 'SP', 0.6, 1.2, 'po', 4, 22],
+    ['Zipbaits', 'Orbit 80 SP-DR', 'minnow', 80, 8.7, 'SP', 1.5, 2, 'pzo', 4, 22],
+    ['Zipbaits', 'Orbit 90 SP-SR', 'minnow', 90, 10.2, 'SP', 0.8, 1, 'po', 4, 22],
+    ['Zipbaits', 'Orbit 110 SP-SR', 'minnow', 110, 16.5, 'SP', 0.8, 1.5, 'p', 4, 22],
+    ['Zipbaits', 'Khamsin 70 SP-SR', 'shad', 70, 9.5, 'SP', 0.8, 1.2, 'po', 4, 20],
+    ['Zipbaits', 'Khamsin 70 SP-DR', 'shad', 70, 9.5, 'SP', 1.5, 2.2, 'pzo', 4, 20],
+    ['Zipbaits', 'B-Switcher 2.0', 'crank', 55, 9, 'F', 1.5, 2, 'op', 9, 26, 1],
+    ['Zipbaits', 'B-Switcher 4.0', 'crank', 60, 14, 'F', 3, 4, 'ozp', 9, 26, 1],
+    ['Zipbaits', 'ZBL System Minnow 9F', 'minnow', 90, 9, 'F', 0.3, 0.8, 'p', 8, 24],
+    ['Zipbaits', 'ZBL Fakie Dog 70', 'top', 70, 8, 'F', 0, 0.2, 'po', 16, 28],
+    ['Jackal', 'Chubby 38', 'crank', 38, 4, 'F', 0.5, 1, 'o', 9, 26, 1],
+    ['Jackal', 'Chubby Deep 38', 'crank', 38, 4.5, 'F', 1.5, 2, 'o', 8, 26, 1],
+    ['Jackal', 'Soul Shad 45 SP', 'shad', 45, 3.6, 'SP', 0.8, 1.2, 'o', 5, 22],
+    ['Jackal', 'Soul Shad 52 SP', 'shad', 52, 4.5, 'SP', 1, 1.5, 'op', 5, 22],
+    ['Jackal', 'Soul Shad 58 SP', 'shad', 58, 5.3, 'SP', 1, 1.5, 'op', 5, 22],
+    ['Jackal', 'Soul Shad 62 SP-DR', 'shad', 62, 6.5, 'SP', 1.8, 2.5, 'ozp', 5, 22],
+    ['Jackal', 'Squad Minnow 65 SP', 'minnow', 65, 5.5, 'SP', 0.6, 1, 'op', 5, 22],
+    ['Jackal', 'Squad Minnow 80 SP', 'minnow', 80, 9.5, 'SP', 0.8, 1.2, 'po', 5, 22],
+    ['Jackal', 'Squad Minnow 95 SP', 'minnow', 95, 13, 'SP', 1, 1.5, 'p', 5, 22],
+    ['Jackal', 'Mag Squad 115 SP', 'minnow', 115, 17, 'SP', 1, 1.5, 'p', 5, 20],
+    ['Jackal', 'Mag Squad 128 SP', 'minnow', 128, 22, 'SP', 1.2, 1.8, 'p', 5, 20],
+    ['Jackal', 'TN50', 'vib', 50, 12, 'S', 0, 99, 'ozp', 1, 24, 1],
+    ['Jackal', 'TN60', 'vib', 60, 17, 'S', 0, 99, 'pzo', 1, 24, 1],
+    ['Jackal', 'TN70', 'vib', 70, 21, 'S', 0, 99, 'pz', 1, 24, 1],
+    ['Pontoon 21', 'Cheerful 34 SP-MR', 'crank', 34, 1.65, 'SP', 0.6, 1, 'o', 6, 26],
+    ['Pontoon 21', 'Cheerful 50 F-MR', 'crank', 50, 7, 'F', 1, 1.5, 'op', 10, 26, 1],
+    ['Pontoon 21', 'Crack Jack 58 F-SR', 'shad', 58, 5.5, 'F', 0.6, 1, 'op', 6, 24],
+    ['Pontoon 21', 'Crack Jack 58 SP-DR', 'shad', 58, 6.3, 'SP', 1.8, 2.5, 'ozp', 5, 22],
+    ['Pontoon 21', 'Crack Jack 58 F-DR', 'shad', 58, 6.3, 'F', 1.8, 2.5, 'oz', 6, 22],
+    ['Pontoon 21', 'Bet-A-Shad 63 SP-SR', 'shad', 63, 6, 'SP', 0.6, 1, 'op', 5, 22],
+    ['Pontoon 21', 'Bet-A-Shad 75 SP-SR', 'shad', 75, 9, 'SP', 0.8, 1.2, 'po', 5, 22],
+    ['Pontoon 21', 'Bet-A-Minnow 78 SP-SR', 'minnow', 78, 8, 'SP', 0.8, 1.2, 'po', 5, 22],
+    ['Pontoon 21', 'Agarron 95 SF-SR', 'minnow', 95, 10, 'F', 0.5, 1, 'p', 6, 22],
+    ['Pontoon 21', 'Greedy-Guts 66 SP-SR', 'minnow', 66, 6.5, 'SP', 0.5, 1, 'op', 5, 22],
+    ['Pontoon 21', 'Bet-A-Vib 54', 'vib', 54, 8.5, 'S', 0, 99, 'ozp', 2, 24, 1],
+    ['Pontoon 21', 'Kalikana Vib 52 Silent', 'vib', 52, 8, 'S', 0, 99, 'oz', 2, 24],
+    ['OSP', 'Rudra 130 SP', 'minnow', 130, 21, 'SP', 1, 1.5, 'p', 4, 20],
+    ['OSP', 'Rudra 130 F', 'minnow', 130, 19, 'F', 0.5, 1, 'p', 8, 22],
+    ['OSP', 'Varuna 110 SP', 'minnow', 110, 14, 'SP', 0.8, 1.4, 'p', 6, 20],
+    ['OSP', 'Dunk 48 F', 'crank', 48, 7, 'F', 1, 1.5, 'op', 9, 26, 1],
+    ['OSP', 'Tiny Blitz DR', 'crank', 39, 4.5, 'F', 1.5, 2, 'o', 8, 26, 1],
+    ['OSP', 'Blitz MR', 'crank', 55, 9, 'F', 1, 1.5, 'op', 9, 26, 1],
+    ['OSP', 'Blitz MAX DR', 'crank', 60, 15, 'F', 2.5, 3.5, 'ozp', 8, 24, 1],
+    ['OSP', 'Bent Minnow 76 F', 'top', 76, 4.5, 'F', 0, 0.3, 'op', 15, 28],
+    ['OSP', 'Bent Minnow 106 F', 'top', 106, 8, 'F', 0, 0.3, 'p', 15, 28],
+    ['OSP', 'Bent Minnow 130 F', 'top', 130, 13, 'F', 0, 0.3, 'p', 15, 28],
+    ['OSP', 'Louder 60', 'top', 60, 9, 'F', 0, 0.1, 'op', 16, 28]
+  ];
+  var FCODE = { p: 'pike', o: 'perch', z: 'zander' };
+  function fromRaw(r, custom) {
+    return { id: r[0] + ' ' + r[1], b: r[0], m: r[1], kind: r[2], size: r[3], g: r[4], buoy: r[5], run: [r[6], r[7]],
+      f: r[8].split('').map(function (c) { return FCODE[c]; }), tw: [r[9], r[10]], rattle: !!r[11], custom: !!custom };
+  }
+  var WOB_BASE = WOB_RAW.map(function (r) { return fromRaw(r); });
+  var WOBBLERS = WOB_BASE.slice();
+  // Модели, которые вы назвали: отмечены в коробке по умолчанию
+  var BOX_DEFAULT = ['Zipbaits Rigge 90 SP-SR', 'Zipbaits Rigge 90F', 'Zipbaits Orbit 80 SP-SR', 'Zipbaits Orbit 90 SP-SR', 'Pontoon 21 Bet-A-Shad 63 SP-SR'];
+  // Силикон. sizes в дюймах; kind: shad (виброхвост) | creature | worm | slug. act: насколько активная игра 0..1.
+  var SOFT_BRANDS = ['Keitech', 'DUO', 'Lucky John'];
+  var SOFT_BASE = [
+    { b: 'Keitech', m: 'Swing Impact Fat', kind: 'shad', sizes: [2.8, 3.3, 3.8, 4.3, 4.8], f: ['pike', 'perch', 'zander'], act: 0.9 },
+    { b: 'Keitech', m: 'Swing Impact', kind: 'shad', sizes: [2, 2.5, 3, 3.5, 4], f: ['perch', 'pike', 'zander'], act: 0.8 },
+    { b: 'Keitech', m: 'Easy Shiner', kind: 'shad', sizes: [2, 3, 3.5, 4, 4.5, 5], f: ['pike', 'perch', 'zander'], act: 0.6 },
+    { b: 'Keitech', m: 'Shad Impact', kind: 'shad', sizes: [2, 3, 4], f: ['perch', 'zander', 'pike'], act: 0.65 },
+    { b: 'Keitech', m: 'Little Spider', kind: 'creature', sizes: [2, 3], f: ['perch'], act: 0.5 },
+    { b: 'Keitech', m: 'Mad Wag Mini', kind: 'worm', sizes: [2.5, 3.5], f: ['perch'], act: 0.4 },
+    { b: 'Keitech', m: 'Crazy Flapper', kind: 'creature', sizes: [2.8, 3.6, 4.4], f: ['pike', 'perch'], act: 0.7 },
+    { b: 'DUO', m: 'виброхвост, модель по наличию', kind: 'shad', sizes: [2.5, 3, 3.8], f: ['perch', 'pike', 'zander'], act: 0.7, check: true },
+    { b: 'Lucky John', m: 'Mr. Greedy', kind: 'shad', sizes: [3.5, 4.5], f: ['pike', 'zander'], act: 0.85 },
+    { b: 'Lucky John', m: 'Bugsy Shad', kind: 'shad', sizes: [2.5, 3.5], f: ['perch', 'zander'], act: 0.7 },
+    { b: 'Lucky John', m: 'Joco Shaker', kind: 'shad', sizes: [2.5, 3.5], f: ['perch', 'pike'], act: 0.6 },
+    { b: 'Lucky John', m: 'Hama Stick', kind: 'slug', sizes: [2.5, 3.5], f: ['perch'], act: 0.2 },
+    { b: 'Lucky John', m: 'Tioga', kind: 'creature', sizes: [2, 2.9], f: ['perch'], act: 0.45 },
+    { b: 'Lucky John', m: 'Long John', kind: 'worm', sizes: [3.1, 4.2], f: ['perch', 'pike'], act: 0.35 }
+  ];
+  var SOFT_ACT = { shad: 0.7, creature: 0.5, worm: 0.35, slug: 0.2 };
+  var SOFTS = SOFT_BASE;
+  function softId(l, sz) { return 'S|' + l.b + ' ' + l.m + ' ' + sz; }
+  function inch(sz) { return String(sz).replace('.', ',') + '″'; }
+
+  // ---------- Свои цвета ----------
+  var TONE_RU = { natural: 'натуральный', mid: 'контрастный / металлик', bright: 'яркий', uv: 'UV / фиолет' };
+  var TONE_CYCLE = ['', 'natural', 'mid', 'bright', 'uv'];
+  var TONE_KEYS = {
+    natural: ['натур', 'призрак', 'ghost', 'прозрач', 'clear', 'плотв', 'уклей', 'окун', 'perch', 'аю', 'ayu', 'арбуз', 'watermelon', 'моторн', 'motor', 'тыкв', 'pumpkin', 'олив', 'olive', 'коричн', 'brown', 'корюш', 'smelt', 'серебр', 'silver', 'малёк', 'малек', 'вобл', 'гольян', 'краснопёр', 'краснопер', 'shiner', 'baitfish', 'bait fish', 'sexy shad', 'pro blue', 'blue gill', 'bluegill'],
+    mid: ['золот', 'gold', 'мед', 'copper', 'металл', 'metal', 'хром', 'chrome', 'чёрн', 'черн', 'black', 'перламутр', 'pearl', 'бел', 'white', 'красн', 'red', 'синяя спин', 'blue back', 'блёстк', 'блестк', 'flake'],
+    bright: ['fire', 'огнен', 'огнён', 'тигр', 'tiger', 'шартрез', 'chartreuse', 'chart', 'лимон', 'lemon', 'лайм', 'lime', 'кислот', 'оранж', 'orange', 'морков', 'carrot', 'жёлт', 'желт', 'yellow', 'розов', 'pink', 'жвачк', 'bubble', 'electric', 'электрик', 'hot', 'бел', 'white'],
+    uv: ['uv', 'ультрафиолет', 'фиолет', 'violet', 'purple', 'сирен']
+  };
+  function tonesOf(c) {
+    if (c.t) return [c.t];
+    var s = c.n.toLowerCase(), out = [];
+    Object.keys(TONE_KEYS).forEach(function (k) { if (TONE_KEYS[k].some(function (kw) { return s.indexOf(kw) >= 0; })) out.push(k); });
+    return out;
+  }
+  function wantTones(x, soft) {
+    var p, s;
+    if (x.turb === 'clear' && x.light === 'sun') { p = ['natural']; s = ['mid']; }
+    else if (x.turb === 'muddy' || (x.turb === 'mid' && x.light === 'cloud')) { p = ['bright']; s = ['mid']; if (x.falling) s.push('natural'); }
+    else { p = ['mid']; s = ['natural']; }
+    if (x.phase === 'cold' && soft) s.push('uv');
+    return { p: p, s: s };
+  }
+  function chipHtml(c, rank, edit, id, i) {
+    var t = tonesOf(c)[0] || '';
+    var title = c.t ? TONE_RU[c.t] : t ? TONE_RU[t] + ' (определён по названию)' : 'тон не определён';
+    if (!edit) return '<span class="chip r' + rank + '" title="' + esc(title) + '"><i data-t="' + t + '"></i>' + esc(c.n) + '</span>';
+    return '<span class="chip"><button type="button" class="cyc" data-cyc="' + esc(id) + '" data-i="' + i + '" title="' + esc(title) + '. Нажмите, чтобы сменить тон"><i data-t="' + t + '"></i>' + esc(c.n) + '</button>' +
+      '<button type="button" class="rm" data-rm="' + esc(id) + '" data-i="' + i + '" aria-label="Убрать цвет ' + esc(c.n) + '">×</button></span>';
+  }
+  function myColorsHtml(id, x, soft) {
+    var list = state.colors[id];
+    if (!list || !list.length) return '';
+    var w = wantTones(x, soft);
+    var ranked = list.map(function (c) {
+      var t = tonesOf(c);
+      var r = t.some(function (k) { return w.p.indexOf(k) >= 0; }) ? 2 : t.some(function (k) { return w.s.indexOf(k) >= 0; }) ? 1 : 0;
+      return { c: c, r: r };
+    }).sort(function (a, b) { return b.r - a.r; });
+    var html = '<div class="mycol"><span class="note">Ваши цвета:</span> ' + ranked.map(function (r) { return chipHtml(r.c, r.r, false); }).join(' ');
+    if (ranked[0].r === 2) html += ' <span class="note">берите первый: он подходит лучше всего</span>';
+    else if (ranked[0].r === 1) html += ' <span class="note">подходит первый</span>';
+    else html += ' <span class="note">под сегодняшние условия ни один не подходит, лучше другой ' + (soft ? 'размер или модель' : 'воблер') + '</span>';
+    return html + '</div>';
+  }
+  var KIND_RU = { minnow: 'минноу', shad: 'шэд', crank: 'кренк', vib: 'раттлин (вибрационный)', top: 'поверхностный', creature: 'креатура', worm: 'червь', slug: 'слаг' };
+  var BUOY_RU = { F: 'плавающий', SP: 'нейтральный', S: 'тонущий' };
+  var WEIGHTS = [2, 3, 4, 5, 6, 7, 8, 10, 12, 14, 16, 18, 21, 24, 28, 32, 36, 40];
+
+  var $ = function (id) { return document.getElementById(id); };
+  var state = { spot: SPOTS[0], data: null, manual: null, live: false, cond: {}, points: [], mapSize: 150 };
+
+  function store(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  function load(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function loadJSON(k) { try { return JSON.parse(load(k)); } catch (e) { return null; } }
+
+  function norm(arr, d) {
+    var doy = Math.floor((d - new Date(d.getFullYear(), 0, 0)) / 86400000);
+    var m = (doy - 15) / 30.4;
+    var i = Math.floor(m), f = m - i;
+    var a = arr[((i % 12) + 12) % 12], b = arr[(((i + 1) % 12) + 12) % 12];
+    return a + (b - a) * f;
+  }
+  function clamp(x, a, b) { return Math.max(a, Math.min(b, x)); }
+  function round1(x) { return Math.round(x * 10) / 10; }
+  function fmt(x) { return String(round1(x)).replace('.', ','); }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+
+  function trap(t, c) {
+    if (t <= c[0] || t >= c[3]) return 0.05;
+    if (t < c[1]) return 0.05 + 0.95 * (t - c[0]) / (c[1] - c[0]);
+    if (t > c[2]) return 0.05 + 0.95 * (c[3] - t) / (c[3] - c[2]);
+    return 1;
+  }
+  function pressFactor(p, trend, d3) {
+    var level = p >= 748 && p <= 765 ? 1 : clamp(1 - (p < 748 ? 748 - p : p - 765) / 25, 0.3, 1);
+    var tr;
+    if (trend === 'flat') tr = 1;
+    else if (trend === 'up') tr = Math.abs(d3) > 2.5 ? 0.45 : 0.85;
+    else tr = Math.abs(d3) > 2.5 ? 0.3 : 0.55;
+    return level * 0.4 + tr * 0.6;
+  }
+  function trendOf(d3) { return d3 > 0.7 ? 'up' : d3 < -0.7 ? 'down' : 'flat'; }
+
+  function current() {
+    var d = state.data, m = state.manual || {};
+    return {
+      p: m.p != null ? m.p : d.p,
+      a: m.a != null ? m.a : d.a,
+      w: m.w != null ? m.w : d.w,
+      trend: m.trend != null ? m.trend : d.trend,
+      d3: m.trend != null ? (m.trend === 'flat' ? 0 : m.trend === 'up' ? 1.5 : -1.5) : d.d3,
+      cloud: d.cloud, wind: d.wind
+    };
+  }
+
+  function climate() {
+    var now = new Date();
+    return { p: PRESS_N, a: round1(norm(AIR_N, now)), w: round1(norm(WATER_N, now)), trend: 'flat', d3: 0, series: null, cloud: null, wind: null };
+  }
+
+  function parseLive(j, spot) {
+    var h = j.hourly, t = h.time, ta = h.temperature_2m, sp = h.surface_pressure;
+    var ci = t.indexOf(j.current.time);
+    if (ci < 0) { ci = 0; for (var i = 0; i < t.length; i++) if (t[i] <= j.current.time) ci = i; }
+    var days = [];
+    for (var s = 0; s + 24 <= ci + 1; s += 24) {
+      var sum = 0, n = 0;
+      for (var k = s; k < s + 24 && k <= ci; k++) { if (ta[k] != null) { sum += ta[k]; n++; } }
+      if (n) days.push(sum / n);
+    }
+    var kw = WATER_K[spot.type] || 0.12;
+    var tw = norm(WATER_N, new Date(t[0]));
+    for (var q = 0; q < days.length; q++) tw += kw * (days[q] - tw);
+    tw = clamp(tw, 0.3, 28);
+    var p = sp[ci] * 0.750062;
+    var p3 = sp[Math.max(0, ci - 3)] * 0.750062;
+    var series = [];
+    for (var z = Math.max(0, ci - 48); z <= ci; z++) series.push(sp[z] * 0.750062);
+    return { p: Math.round(p), a: round1(j.current.temperature_2m), w: round1(tw), trend: trendOf(p - p3), d3: p - p3, series: series,
+      cloud: j.current.cloud_cover, wind: j.current.wind_speed_10m, time: j.current.time };
+  }
+
+  function fetchLive(spot) {
+    var url = 'https://api.open-meteo.com/v1/forecast?latitude=' + spot.lat + '&longitude=' + spot.lon +
+      '&hourly=temperature_2m,surface_pressure&current=temperature_2m,surface_pressure,cloud_cover,wind_speed_10m&wind_speed_unit=ms&past_days=14&forecast_days=1&timezone=Europe%2FMoscow';
+    var ctl = typeof AbortController !== 'undefined' ? new AbortController() : null;
+    var to = setTimeout(function () { if (ctl) ctl.abort(); }, 9000);
+    return fetch(url, ctl ? { signal: ctl.signal } : undefined).then(function (r) {
+      clearTimeout(to);
+      if (!r.ok) throw new Error('http');
+      return r.json();
+    }).then(function (j) { return parseLive(j, spot); });
+  }
+
+  function loadSpot() {
+    state.data = climate();
+    state.live = false;
+    loadCond(); loadPoints();
+    render(); drawMap();
+    $('statusText').textContent = 'Запрашиваю погоду для «' + state.spot.name + '»…';
+    var spot = state.spot;
+    fetchLive(spot).then(function (d) {
+      if (spot !== state.spot) return;
+      state.data = d; state.live = true; render();
+    }).catch(function () {
+      if (spot !== state.spot) return;
+      state.live = false; render();
+    });
+  }
+
+  // ---------- Условия ловли ----------
+  function defaultCond(s) {
+    return { fish: s.type === 'pond' ? 'pike' : 'pike', turb: s.type === 'river' ? 'mid' : s.type === 'pond' ? 'mid' : 'clear', depth: s.depth, light: 'auto', cur: s.cur, depthTouched: false };
+  }
+  function loadCond() {
+    var c = loadJSON('klev.cond.' + state.spot.id);
+    state.cond = Object.assign(defaultCond(state.spot), c && typeof c === 'object' ? c : {});
+    $('cFish').value = state.cond.fish; $('cTurb').value = state.cond.turb; $('cDepth').value = state.cond.depth;
+    $('cLight').value = state.cond.light; $('cCur').value = String(state.cond.cur);
+  }
+  function saveCond() { store('klev.cond.' + state.spot.id, JSON.stringify(state.cond)); }
+  function lightOf(c) {
+    if (state.cond.light !== 'auto') return state.cond.light;
+    if (c.cloud == null) return 'part';
+    return c.cloud < 30 ? 'sun' : c.cloud < 70 ? 'part' : 'cloud';
+  }
+  function phaseOf(w) { return w < 8 ? 'cold' : w < 14 ? 'cool' : w < 20 ? 'warm' : 'hot'; }
+  var PHASE_RU = { cold: 'холодная вода', cool: 'прохладная вода', warm: 'тёплая вода', hot: 'жаркая вода' };
+  var LIGHT_RU = { sun: 'солнце', part: 'переменная облачность', cloud: 'пасмурно' };
+  var TURB_RU = { clear: 'прозрачная', mid: 'средняя', muddy: 'мутная' };
+
+  function ctx() {
+    var c = current();
+    var pf = pressFactor(c.p, c.trend, c.d3);
+    var tf = TARGET[state.cond.fish];
+    var act = trap(c.w, FISH[tf]) * (0.5 + 0.5 * pf);
+    var D = parseFloat(state.cond.depth) || state.spot.depth;
+    return { c: c, pf: pf, act: act, w: c.w, phase: phaseOf(c.w), D: clamp(D, 0.3, 25), cur: +state.cond.cur, turb: state.cond.turb,
+      light: lightOf(c), fish: state.cond.fish, falling: c.trend === 'down', sharp: Math.abs(c.d3) > 2.5 };
+  }
+  // На какой глубине держится рыба относительно глубины точки
+  function fishDepth(x) {
+    var D = x.D;
+    if (x.phase === 'cold') return D * 0.85;
+    if (x.phase === 'cool') return D * (x.fish === 'zander' ? 0.85 : 0.6);
+    if (x.phase === 'warm') return Math.min(D * 0.5, x.fish === 'zander' ? D * 0.8 : 1.5);
+    return Math.min(D * 0.6, 2);
+  }
+
+  // ---------- Воблеры ----------
+  function idealSize(x) {
+    var a = x.act;
+    if (x.fish === 'pike') return a > 0.6 ? 115 : a > 0.35 ? 90 : 75;
+    if (x.fish === 'perch') return a > 0.6 ? 58 : 50;
+    return 65;
+  }
+  function pickWobblers(x) {
+    var target = fishDepth(x), ideal = idealSize(x);
+    var pool = state.boxOnly ? WOBBLERS.filter(function (l) { return state.box[l.id]; }) : WOBBLERS;
+    var scored = pool.map(function (l) {
+      if (l.kind === 'top' && (x.w < 15 || x.falling || x.act < 0.45)) return { l: l, s: 0 };
+      var dist;
+      if (l.kind === 'vib') dist = x.D >= 1 ? 0 : 1;
+      else dist = target < l.run[0] ? l.run[0] - target : target > l.run[1] ? target - l.run[1] : 0;
+      var sDepth = 1 / (1 + dist * 1.3);
+      var sFish = l.f.indexOf(x.fish) >= 0 ? (l.f[0] === x.fish ? 1 : 0.85) : 0.25;
+      var sSize = 1 / (1 + Math.abs(l.size - ideal) / 30);
+      var sTemp = x.w >= l.tw[0] && x.w <= l.tw[1] ? 1 : 0.35;
+      var sCur = x.cur >= 2 && l.g < 6 ? 0.6 : x.cur >= 2 && l.buoy === 'F' && l.kind !== 'crank' ? 0.8 : 1;
+      var bonus = 0;
+      if (x.turb === 'muddy' && l.rattle) bonus += 0.2;
+      if (x.turb === 'clear' && l.buoy === 'SP' && l.kind === 'minnow') bonus += 0.1;
+      if (x.phase === 'cold' && (l.buoy === 'SP' || l.kind === 'vib')) bonus += 0.15;
+      if (x.phase === 'cold' && l.kind === 'crank') bonus -= 0.15;
+      if (state.box[l.id] && !state.boxOnly) bonus += 0.08;
+      return { l: l, s: sDepth * sFish * sSize * sTemp * sCur * (1 + bonus) };
+    }).filter(function (r) { return r.s > 0.05; }).sort(function (a, b) { return b.s - a.s; });
+    // Шесть главных с разнообразием брендов (не больше двух на бренд), остальные — списком ниже
+    var top = [], perBrand = {};
+    for (var i = 0; i < scored.length && top.length < 6; i++) {
+      var b = scored[i].l.b;
+      if ((perBrand[b] || 0) >= 2) continue;
+      perBrand[b] = (perBrand[b] || 0) + 1; top.push(scored[i]);
+    }
+    for (var j = 0; j < scored.length && top.length < 6; j++) if (top.indexOf(scored[j]) < 0) top.push(scored[j]);
+    top.sort(function (a, b) { return b.s - a.s; });
+    var max = scored.length ? scored[0].s : 1;
+    var rest = scored.filter(function (r) { return top.indexOf(r) < 0; }).slice(0, 14);
+    return { top: top.map(function (r) { return r.l; }), rest: rest.map(function (r) { return { l: r.l, p: r.s / max }; }) };
+  }
+  function wobblerRetrieve(l, x) {
+    var slow = x.phase === 'cold' || x.falling || x.act < 0.4;
+    if (l.kind === 'minnow') {
+      if (x.phase === 'cold') return 'Медленный твичинг: 1–2 мягких рывка кончиком, затем пауза 3–6 с. Нейтральный воблер зависает, и хватка обычно приходится на паузу. Можно сделать 2–3 оборота катушки, чтобы завести его на глубину.';
+      if (slow) return 'Твичинг с длинными паузами: 2 коротких рывка, пауза 2–3 с. Давление нестабильное, поэтому не ускоряйтесь.';
+      if (x.phase === 'hot') return 'Рывковая проводка сериями по 3–4 рывка, паузы до 1 с. Ловите утром и вечером у травы и бровок.';
+      return 'Активный твичинг: серии по 2–3 рывка, паузы 1–2 с. Время от времени добавляйте рывок в сторону.';
+    }
+    if (l.kind === 'shad') {
+      if (slow) return 'Медленная равномерная проводка с остановками на 1–2 с. Воблер должен касаться дна или верхушек травы, особенно на бровке.';
+      return 'Stop & go: 3–5 оборотов катушки, затем короткая остановка. Хорошо работает по свалу и вдоль коряг.';
+    }
+    if (l.kind === 'crank') {
+      if (slow) return 'Медленная равномерная проводка, чтобы воблер обстукивал дно или коряги. После удара о препятствие сделайте паузу на 1 с, кренк всплывёт и обойдёт его.';
+      return 'Равномерная проводка в среднем темпе с ускорениями. Обстукивайте дно, камни и коряги.';
+    }
+    if (l.kind === 'vib') {
+      if (x.phase === 'cold' || x.phase === 'cool') return 'Подброс и падение у дна: поднимите вершинку удилища на 40–60 см, затем дайте приманке упасть на натянутой леске. Поклёвка обычно приходится на падение.';
+      return 'Равномерная проводка в толще или быстро над травой, выпуская приманку на 1–2 с до нужного слоя.';
+    }
+    return 'Проводка «Walking the dog»: ритмичные подёргивания кончиком с подмоткой слабины. Ловите над травой, утром и вечером.';
+  }
+  function runText(l, x) {
+    if (l.kind === 'vib') return 'любой горизонт, до ~' + fmt(Math.max(x.D, 1)) + ' м';
+    if (l.kind === 'top') return 'поверхность';
+    return fmt(l.run[0]) + '–' + fmt(l.run[1]) + ' м';
+  }
+
+  // ---------- Силикон ----------
+  function idealInch(x) {
+    if (x.fish === 'pike') return x.act > 0.6 ? 4.8 : 3.8;
+    if (x.fish === 'perch') return x.phase === 'cold' || x.act < 0.4 ? 2 : x.act > 0.65 ? 3 : 2.5;
+    return x.act > 0.5 ? 3.8 : 3.3;
+  }
+  function nearest(arr, v) { return arr.reduce(function (a, b) { return Math.abs(b - v) < Math.abs(a - v) ? b : a; }); }
+  function roundW(g) { return nearest(WEIGHTS, g); }
+  function jigWeight(x, size) {
+    var g = (x.D * 1.8 + 2) * (x.phase === 'cold' ? 0.85 : 1) + x.cur * 5;
+    if (size >= 3.8) g += 2;
+    if (size >= 4.8) g += 3;
+    return g;
+  }
+  function chooseRig(l, x, size) {
+    var passive = x.phase === 'cold' || x.act < 0.45;
+    var snaggy = state.spot.type === 'pond';
+    if (x.fish === 'perch' && passive && (l.kind === 'worm' || l.kind === 'slug' || l.kind === 'creature')) return x.cur >= 1 ? 'branch' : 'drop';
+    if (x.fish === 'perch' && x.cur >= 1 && passive) return 'branch';
+    if (l.kind === 'shad') return snaggy && x.fish === 'pike' ? 'cheb' : 'jig';
+    if (x.fish === 'pike') return 'cheb';
+    return 'jig';
+  }
+  var RIG = {
+    jig: { n: 'Джиг-головка', place: 'Груз отлит на крючке, в голове приманки. Крючок выводите в спинку по центру тела.' },
+    cheb: { n: 'Чебурашка + офсет (разборный монтаж)', place: 'Груз свободно висит на заводном кольце прямо перед приманкой. Жало офсетного крючка спрячьте в тело, так приманка меньше цепляет траву и коряги.' },
+    drop: { n: 'Дроп-шот', place: 'Груз ставьте на конце лески, крючок выше: на 15–25 см в холод и на 30–40 см, когда рыба стоит выше. Приманку цепляйте за нос.' },
+    branch: { n: 'Отводной поводок', place: 'Груз на конце основной лески. Через тройник или вертлюг выше отходит поводок 60–120 см с приманкой на офсете: короче на течении, длиннее над травой.' }
+  };
+  function hookFor(size, rig) {
+    var h = size <= 2 ? '№4–6' : size <= 2.5 ? '№2–4' : size <= 3 ? '№1–1/0' : size <= 3.8 ? '2/0–3/0' : '3/0–5/0';
+    return (rig === 'drop' ? 'крючок для дроп-шота ' : rig === 'jig' ? 'головка с крючком ' : 'офсет ') + h;
+  }
+  function pickSofts(x) {
+    var ideal = idealInch(x), passive = x.phase === 'cold' || x.act < 0.45;
+    var wantAct = passive ? 0.35 : 0.8;
+    if (x.fish === 'pike' || x.fish === 'zander') wantAct = Math.max(wantAct, 0.6);
+    if (x.turb === 'muddy') wantAct = Math.max(wantAct, 0.75);
+    var scored = [];
+    SOFTS.forEach(function (l) {
+      var sFish = l.f.indexOf(x.fish) >= 0 ? (l.f[0] === x.fish ? 1 : 0.85) : 0.2;
+      var sAct = 1 - Math.abs(l.act - wantAct) * 0.7;
+      var best = null;
+      l.sizes.forEach(function (sz) {
+        var own = !!state.sbox[softId(l, sz)];
+        if (state.softOnly && !own) return;
+        var s = sFish * sAct * (1 / (1 + Math.abs(sz - ideal) / 0.8)) * (l.check ? 0.92 : 1) * (own && !state.softOnly ? 1.1 : 1);
+        if (!best || s > best.s) best = { l: l, size: sz, s: s };
+      });
+      if (best) scored.push(best);
+    });
+    scored.sort(function (a, b) { return b.s - a.s; });
+    var out = [], brands = {};
+    for (var i = 0; i < scored.length && out.length < 3; i++) {
+      if (brands[scored[i].l.b] && out.length < 3 && Object.keys(brands).length < 3) continue;
+      brands[scored[i].l.b] = 1; out.push(scored[i]);
+    }
+    for (var j = 0; j < scored.length && out.length < 3; j++) if (out.indexOf(scored[j]) < 0) out.push(scored[j]);
+    return out.map(function (r) {
+      var rig = chooseRig(r.l, x, r.size);
+      var g = jigWeight(x, r.size);
+      if (rig === 'branch') g *= 1.3;
+      if (rig === 'drop') g = Math.max(4, g * 0.9);
+      var w = roundW(g);
+      return { l: r.l, size: r.size, rig: rig, w: w, wAlt: [roundW(w * 0.75), roundW(w * 1.3)] };
+    });
+  }
+  function softRetrieve(r, x) {
+    var fall = x.phase === 'cold' ? '3–4' : x.phase === 'cool' ? '2–3' : '1,5–2';
+    if (r.rig === 'drop') return 'Груз лежит на дне. Мелко потряхивайте кончиком удилища 3–5 с, затем протяните на 20–30 см и сделайте паузу. Поклёвка часто приходится на стоящую на месте приманку.';
+    if (r.rig === 'branch') return 'Медленная протяжка: 1–2 оборота, пауза 2–4 с. Груз тащится по дну, приманка идёт за ним. ' + (x.cur ? 'Забрасывайте поперёк течения и чуть вверх.' : '');
+    var t = 'Ступенчатая проводка: 2–3 оборота, затем пауза, пока приманка не коснётся дна. Если падение занимает ' + fall + ' с, вес подобран верно.';
+    if (x.phase === 'cold') t += ' Хорошо работает волочение по дну с остановками.';
+    else if (x.act > 0.65) t += ' Можно ускорить: делать двойной подброс вершинкой удилища.';
+    return t;
+  }
+  function rigSvg(rig) {
+    var L = 'stroke="var(--muted)" stroke-width="1.5" fill="none"', W = 'fill="var(--ink)"', B = 'fill="var(--accent)"';
+    var lure = function (x0, y0) { return '<path d="M' + x0 + ' ' + y0 + 'q10 -6 22 0q-10 6 -22 0z" ' + B + '/><path d="M' + (x0 + 22) + ' ' + y0 + 'l6 -4v8z" ' + B + '/>'; };
+    if (rig === 'jig') return '<svg viewBox="0 0 120 36" aria-hidden="true"><path d="M0 18H74" ' + L + '/><circle cx="78" cy="18" r="5" ' + W + '/>' + lure(82, 18) + '</svg>';
+    if (rig === 'cheb') return '<svg viewBox="0 0 120 36" aria-hidden="true"><path d="M0 18H66" ' + L + '/><circle cx="70" cy="18" r="6" ' + W + '/><circle cx="78" cy="18" r="2" fill="none" stroke="var(--ink)" stroke-width="1.5"/>' + lure(82, 18) + '</svg>';
+    if (rig === 'drop') return '<svg viewBox="0 0 120 36" aria-hidden="true"><path d="M0 4Q40 4 60 6V30" ' + L + '/>' + lure(62, 12) + '<rect x="56" y="28" width="8" height="6" rx="2" ' + W + '/><path d="M70 12V30" stroke="var(--line)" stroke-dasharray="2 2"/></svg>';
+    return '<svg viewBox="0 0 120 36" aria-hidden="true"><path d="M0 14H40V28M40 14H84" ' + L + '/><rect x="36" y="27" width="8" height="7" rx="2" ' + W + '/>' + lure(86, 14) + '</svg>';
+  }
+
+  // ---------- Расцветки ----------
+  var SW = {
+    natural: 'linear-gradient(180deg,#3d4a3a 0 35%,#c9ced1 35% 100%)',
+    ghost: 'linear-gradient(180deg,rgba(200,215,210,.55),rgba(240,245,245,.85))',
+    perchc: 'repeating-linear-gradient(90deg,#6d8a2f 0 4px,#2f3a1d 4px 6px)',
+    gold: 'linear-gradient(180deg,#5a3d12,#d8a33a 60%,#f1d27a)',
+    blackback: 'linear-gradient(180deg,#141414 0 40%,#d9dde0 40%)',
+    fire: 'linear-gradient(180deg,#2f7a2a 0 30%,#e8d21d 30% 60%,#f05a1d 60%)',
+    chart: 'linear-gradient(180deg,#c9e81a,#f3f7a0)',
+    white: 'linear-gradient(180deg,#f7f7f2,#e0e4e6)',
+    orangeb: 'linear-gradient(180deg,#6b6f72 0 45%,#ff7a1a 45%)',
+    motor: 'linear-gradient(180deg,#6b5a1f,#8f7d2c)',
+    melon: 'linear-gradient(180deg,#5d7a4a,#7f9a62)',
+    blackred: 'radial-gradient(circle at 30% 50%,#c0262a 0 2px,transparent 2.5px),radial-gradient(circle at 70% 40%,#c0262a 0 2px,transparent 2.5px),#1b1b1b',
+    uv: 'linear-gradient(180deg,#5b2c86,#9e63d6)',
+    pink: 'linear-gradient(180deg,#f7a7c9,#f2d1e2)',
+    carrot: 'linear-gradient(180deg,#e6501a,#f39a3b)',
+    clearsil: 'linear-gradient(180deg,rgba(210,220,225,.5),rgba(170,185,195,.7))'
+  };
+  function pickColors(x) {
+    var hard = [], soft = [];
+    var bright = x.turb === 'muddy' || (x.turb === 'mid' && x.light === 'cloud');
+    if (x.turb === 'clear' && x.light === 'sun') {
+      hard.push(['ghost', 'Полупрозрачный «призрак»', 'Самый незаметный, подходит для осторожной рыбы на солнце']);
+      hard.push(['natural', 'Натуральная уклейка или плотва', 'Тёмная спинка, серебристые бока']);
+      hard.push(['perchc', 'Приглушённый окунь', 'Хорошо работает на щуку в прозрачной воде']);
+      soft.push(['clearsil', 'Прозрачный с серебряной блёсткой', '']);
+      soft.push(['melon', 'Зелёный арбуз (watermelon)', 'Натуральный цвет для прозрачной воды']);
+      soft.push(['motor', 'Моторное масло', 'Классика осеннего окуня']);
+    } else if (!bright) {
+      hard.push(['blackback', 'Чёрная спинка, серебристые бока', 'Контрастный силуэт в средней воде']);
+      hard.push(['gold', 'Золото или медь (металлик)', 'Даёт яркие вспышки в облачную погоду']);
+      hard.push(['natural', 'Натуральная плотва', 'Если рыба стоит у дна и пассивна']);
+      soft.push(['motor', 'Моторное масло', '']);
+      soft.push(['blackred', 'Чёрный с красной блёсткой', 'Силуэт хорошо виден снизу на фоне неба']);
+      soft.push(['white', 'Белый перламутр', 'Для щуки и судака']);
+    } else {
+      hard.push(['fire', 'Огненный тигр (fire tiger)', 'Самый заметный цвет в мутной воде']);
+      hard.push(['chart', 'Шартрез или лимон', 'Хорошо виден в мутной воде и в сумерках']);
+      hard.push(['orangeb', 'Оранжевое брюхо', 'Яркий контраст снизу']);
+      soft.push(['chart', 'Кислотный шартрез', '']);
+      soft.push(['white', 'Белый', 'Для щуки и судака']);
+      soft.push(['carrot', 'Морковный', 'Для окуня в мутной воде']);
+    }
+    if (x.phase === 'cold') soft.splice(2, 0, ['uv', 'Фиолетовый с UV', 'Вода холодная, а освещение слабое, поэтому полезен ультрафиолет']);
+    if (x.falling && hard[0][0] === 'fire') hard.splice(1, 0, ['natural', 'Натуральная уклейка', 'Давление падает: если на яркий не берёт, попробуйте натуральный']);
+    if (x.light === 'cloud' && x.turb !== 'muddy' && soft.every(function (c) { return c[0] !== 'pink'; }) && x.fish === 'perch') soft.push(['pink', 'Розовая «жвачка»', 'Иногда срабатывает на окуня в пасмурный день']);
+    return { hard: hard.slice(0, 4), soft: soft.slice(0, 4), bright: bright };
+  }
+  function colorLi(c) { return '<li><i style="background:' + SW[c[0]] + '"></i><span>' + esc(c[1]) + (c[2] ? '<small>' + esc(c[2]) + '</small>' : '') + '</span></li>'; }
+  function colorShort(c) { return '<span class="sw"><i style="background:' + SW[c[0]] + '"></i>' + esc(c[1]) + '</span>'; }
+
+  var TREND = { up: 'растёт', flat: 'стоит', down: 'падает' };
+
+  function render() {
+    var now = new Date();
+    $('date').textContent = now.toLocaleDateString('ru-RU', { weekday: 'long', day: 'numeric', month: 'long' });
+    var c = current(), d = state.data, man = state.manual && (state.manual.p != null || state.manual.a != null || state.manual.w != null || state.manual.trend != null);
+
+    $('vP').textContent = Math.round(c.p);
+    $('vA').textContent = (c.a > 0 ? '+' : '') + c.a.toFixed(1);
+    $('vW').textContent = c.w.toFixed(1);
+    $('sP').textContent = 'Гектопаскали: ' + Math.round(c.p / 0.750062) + '. Давление ' + TREND[c.trend] + (state.live && state.manual == null ? ' (за 3 ч: ' + (d.d3 > 0 ? '+' : '') + d.d3.toFixed(1) + ')' : '');
+    $('sA').textContent = state.live ? 'Сейчас' + (c.wind != null ? ', ветер ' + Math.round(c.wind) + ' м/с' : '') + (c.cloud != null ? ', облачность ' + Math.round(c.cloud) + '%' : '') : 'Средняя на эту дату';
+    $('sW').textContent = state.live ? 'Расчёт по воздуху за 14 дней' + (state.spot.type === 'pond' ? ' (для пруда: прогрев и остывание быстрее)' : '') : 'Средняя на эту дату';
+
+    var dot = $('dot');
+    dot.className = 'dot' + (man ? ' manual' : state.live ? ' live' : '');
+    $('statusText').textContent = man
+      ? 'Показаны ваши замеры. Остальное: ' + (state.live ? 'онлайн-данные Open-Meteo.' : 'средние значения на эту дату.')
+      : state.live
+        ? 'Онлайн: Open-Meteo, ' + state.spot.name + ', замер ' + d.time.replace('T', ' ') + '.'
+        : 'Онлайн-погода недоступна (на странице claude.ai запросы к погодному серверу заблокированы, в отдельном HTML-файле она работает). Показаны средние значения на эту дату. Можно ввести свои замеры внизу.';
+
+    var x = ctx();
+    $('phase').innerHTML = '<span class="pill hot">' + PHASE_RU[x.phase] + '</span><span class="pill">' + LIGHT_RU[x.light] + '</span><span class="pill">вода ' + TURB_RU[x.turb] + '</span><span class="pill">рыба держится ≈ ' + fmt(fishDepth(x)) + ' м</span>';
+    $('condNote').textContent = 'Подбор ниже идёт по этим условиям. Давление ' + TREND[c.trend] + ', активность цели ' + Math.round(x.act * 10) + ' из 10.' +
+      (state.points.length >= 3 ? ' На карте глубин этого водоёма ' + state.points.length + ' точек промера.' : '');
+
+    // Клёв
+    var list = FISH_BY_TYPE[state.spot.type];
+    var rows = list.map(function (n) {
+      var s = trap(c.w, FISH[n]) * (0.5 + 0.5 * x.pf);
+      return { n: n, v: Math.round(clamp(s, 0, 1) * 100) / 10 };
+    }).sort(function (a, b) { return b.v - a.v; });
+    $('fishList').innerHTML = rows.map(function (r) {
+      return '<div class="fish"><span class="name">' + r.n + '</span><div class="scale"><span class="float" style="left:' +
+        clamp(r.v * 10, 4, 96) + '%"></span></div><span class="num">' + r.v.toFixed(1) + '<small>/10</small></span></div>';
+    }).join('');
+    var best = rows[0], parts = [];
+    parts.push('Лучше всего: <b>' + best.n.toLowerCase() + '</b> (' + best.v.toFixed(1) + ' из 10).');
+    if (c.trend === 'down' && x.sharp) parts.push('Давление быстро падает, рыба пассивна.');
+    else if (c.trend === 'up' && x.sharp) parts.push('Давление резко растёт, клёв нестабилен.');
+    else if (c.trend === 'flat') parts.push('Давление стабильное, это хорошо для клёва.');
+    else if (c.trend === 'up') parts.push('Давление медленно растёт, клёв обычно улучшается.');
+    else parts.push('Давление снижается, клёв может ослабнуть.');
+    if (c.w < 8) parts.push('Вода холодная: ловите на глубине, проводка медленная.');
+    $('verdict').innerHTML = parts.join(' ');
+
+    // Цвета
+    var col = pickColors(x);
+    $('colHard').innerHTML = col.hard.map(colorLi).join('');
+    $('colSoft').innerHTML = col.soft.map(colorLi).join('');
+    $('colNote').textContent = 'Правило: чем прозрачнее вода и ярче солнце, тем натуральнее цвет. В мутной воде и в пасмурную погоду выбирайте яркие и контрастные цвета. Если 20–30 минут нет поклёвок, смените цвет на противоположный.';
+
+    // Воблеры
+    var picked = pickWobblers(x), wob = picked.top;
+    $('wobRest').innerHTML = picked.rest.map(function (r) {
+      return '<li><span class="rb">' + esc(r.l.b) + '</span><span class="rm">' + esc(r.l.m) + (state.box[r.l.id] ? ' <span class="inbox">в коробке</span>' : '') +
+        '<small>' + r.l.size + ' мм · ' + fmt(r.l.g) + ' г · ' + KIND_RU[r.l.kind] + ' · ' + runText(r.l, x) + '</small></span>' +
+        '<span class="meter" title="Насколько подходит"><b style="width:' + Math.round(r.p * 100) + '%"></b></span></li>';
+    }).join('');
+    $('wobRestWrap').hidden = !picked.rest.length;
+    $('boxInfo').textContent = state.boxOnly
+      ? 'Подбор только из вашей коробки: ' + boxCount() + ' шт.'
+      : 'Подбор из всего каталога (' + WOBBLERS.length + ' моделей). Ваши воблеры получают небольшой приоритет.';
+    $('wobblers').innerHTML = wob.map(function (l, i) {
+      var cl = col.hard[i % col.hard.length];
+      return '<div class="lure"><span class="rank">' + (i + 1) + '</span><div class="body">' +
+        '<div class="title"><span class="brand">' + esc(l.b) + '</span><span class="model">' + esc(l.m) + '</span>' + (state.box[l.id] ? '<span class="inbox">в коробке</span>' : '') + '</div>' +
+        '<div class="specs"><span class="spec">' + l.size + ' мм</span><span class="spec">' + fmt(l.g) + ' г</span><span class="spec">' + KIND_RU[l.kind] + '</span><span class="spec">' + BUOY_RU[l.buoy] + '</span><span class="spec">' + runText(l, x) + '</span></div>' +
+        '<dl><dt>Проводка</dt><dd>' + wobblerRetrieve(l, x) + '</dd><dt>Цвет</dt><dd>' + colorShort(cl) + myColorsHtml(l.id, x, false) + '</dd></dl></div></div>';
+    }).join('') || (state.boxOnly && !boxCount()
+      ? '<p class="note">В коробке пока пусто. Отметьте свои воблеры в разделе «Моя коробка».</p>'
+      : '<p class="note">Под эти условия воблеры подходят плохо, лучше ловить на силикон.</p>');
+
+    // Силикон
+    var sf = pickSofts(x);
+    $('softs').innerHTML = sf.map(function (r, i) {
+      var cl = col.soft[i % col.soft.length], rg = RIG[r.rig];
+      return '<div class="lure"><span class="rank">' + (i + 1) + '</span><div class="body">' +
+        '<div class="title"><span class="brand">' + esc(r.l.b) + '</span><span class="model">' + esc(r.l.m) + '</span>' + (state.sbox[softId(r.l, r.size)] ? '<span class="inbox">в коробке</span>' : '') + '</div>' +
+        '<div class="specs"><span class="spec">' + String(r.size).replace('.', ',') + '″ ≈ ' + Math.round(r.size * 2.54) + ' см</span><span class="spec">' + KIND_RU[r.l.kind] + '</span><span class="spec">груз ' + r.w + ' г</span><span class="spec">' + hookFor(r.size, r.rig) + '</span></div>' +
+        '<dl><dt>Монтаж</dt><dd><div class="rig">' + rigSvg(r.rig) + '<b>' + rg.n + '</b></div></dd>' +
+        '<dt>Где груз</dt><dd>' + rg.place + '</dd>' +
+        '<dt>Вес</dt><dd>' + r.w + ' г при глубине ' + fmt(x.D) + ' м' + (x.cur ? ' и течении' : '') + '. Если приманка падает дольше 4 с, берите ' + r.wAlt[1] + ' г, если быстрее 1 с, берите ' + r.wAlt[0] + ' г.</dd>' +
+        '<dt>Проводка</dt><dd>' + softRetrieve(r, x) + '</dd><dt>Цвет</dt><dd>' + colorShort(cl) + myColorsHtml(softId(r.l, r.size), x, true) + '</dd>' +
+        (r.l.check ? '<dt>Важно</dt><dd>Мягких приманок у DUO немного, точное название модели я не подставляю. Возьмите виброхвост DUO указанного размера, который есть в магазине.</dd>' : '') +
+        '</dl></div></div>';
+    }).join('') || '<p class="note">В коробке пока нет силикона. Отметьте свои размеры в разделе «Моя коробка» на вкладке «Силикон».</p>';
+    $('softInfo').textContent = state.softOnly
+      ? 'Подбор только из вашей коробки: ' + softCount() + ' размеров.'
+      : 'Подбор из всего каталога. Ваши размеры получают небольшой приоритет.';
+
+    // График
+    var sp = $('sparkPanel');
+    if (state.live && d.series && d.series.length > 3) {
+      sp.hidden = false;
+      var s = d.series, mn = Math.min.apply(null, s), mx = Math.max.apply(null, s);
+      mn = Math.floor(mn - 1); mx = Math.ceil(mx + 1);
+      var pts = s.map(function (v, i) { return [(i / (s.length - 1)) * 580 + 10, 80 - ((v - mn) / (mx - mn)) * 70]; });
+      var line = pts.map(function (p, i) { return (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1); }).join('');
+      var last = pts[pts.length - 1];
+      $('spark').innerHTML =
+        '<line x1="10" x2="590" y1="45" y2="45" stroke="var(--line)" stroke-width="1" vector-effect="non-scaling-stroke"/>' +
+        '<path d="' + line + 'L590 85L10 85Z" fill="var(--water)" fill-opacity="0.14"/>' +
+        '<path d="' + line + '" fill="none" stroke="var(--water)" stroke-width="2" vector-effect="non-scaling-stroke"/>' +
+        '<circle cx="' + last[0] + '" cy="' + last[1] + '" r="4" fill="var(--accent)"/>';
+      $('sparkNote').textContent = 'От ' + Math.round(s[0]) + ' до ' + Math.round(s[s.length - 1]) + ' мм рт. ст.; диапазон за период ' + Math.round(Math.min.apply(null, s)) + '–' + Math.round(Math.max.apply(null, s)) + '.';
+    } else sp.hidden = true;
+
+    $('foot').textContent = 'Давление, температуру воздуха, облачность и ветер даёт модель Open-Meteo. Температура воды рассчитана по воздуху за две недели, на конкретном водоёме она может отличаться на несколько градусов. Подбор приманок сделан по общим правилам, а не по живому каталогу: размеры, вес и заглубление указаны ориентировочно, сверяйте их с упаковкой. Оценка клёва тоже ориентировочная.';
+  }
+
+  // ---------- Карта глубин ----------
+  function pointsKey() { return 'klev.depth.' + state.spot.id; }
+  function loadPoints() {
+    var v = loadJSON(pointsKey());
+    state.points = v && Array.isArray(v.points) ? v.points.filter(function (p) { return isFinite(p.x) && isFinite(p.y) && isFinite(p.d); }) : [];
+    state.mapSize = v && v.size ? v.size : state.spot.type === 'pond' ? 150 : 400;
+    $('mSize').value = String(state.mapSize);
+    renderMapText();
+  }
+  function savePoints() { store(pointsKey(), JSON.stringify({ size: state.mapSize, points: state.points })); }
+  function renderMapText() {
+    var s = state.spot;
+    $('mapTitle').textContent = 'Карта глубин: ' + s.name;
+    $('mapCoords').textContent = s.lat.toFixed(6) + ', ' + s.lon.toFixed(6);
+    $('mapIntro').textContent = s.mine
+      ? 'Готовой открытой карты глубин для этого пруда я не нашёл: на небольшие пруды Подмосковья её обычно нет. Проверьте ссылки ниже. Если карты нет и там, соберите свою: нажимайте на квадрат в местах промеров маркерным грузом или эхолотом. Центр квадрата соответствует координатам пруда, север сверху.'
+      : 'Для крупных водоёмов есть платные карты (Navionics, Dap Drift, MapFish), ссылки ниже. Можно вести и свои промеры: нажмите на квадрат в месте замера. Центр квадрата соответствует точке водоёма, север сверху.';
+    var q = s.lat + ',' + s.lon;
+    $('mapLinks').innerHTML =
+      '<a href="https://yandex.ru/maps/?ll=' + s.lon + '%2C' + s.lat + '&z=17&l=sat&pt=' + s.lon + ',' + s.lat + '" target="_blank" rel="noopener">Спутник в Яндекс Картах</a>' +
+      '<a href="https://www.google.com/maps/@' + q + ',17z/data=!3m1!1e3" target="_blank" rel="noopener">Спутник в Google</a>' +
+      '<a href="https://webapp.navionics.com/?lang=ru" target="_blank" rel="noopener">Navionics (найти по координатам)</a>' +
+      '<a href="https://www.openstreetmap.org/?mlat=' + s.lat + '&mlon=' + s.lon + '#map=17/' + s.lat + '/' + s.lon + '" target="_blank" rel="noopener">OpenStreetMap</a>';
+  }
+  function hexToRgb(h) {
+    h = h.trim().replace('#', '');
+    if (h.length === 3) h = h.split('').map(function (c) { return c + c; }).join('');
+    var n = parseInt(h, 16); return [n >> 16 & 255, n >> 8 & 255, n & 255];
+  }
+  function cssVar(n) { return getComputedStyle(document.documentElement).getPropertyValue(n).trim(); }
+  function idw(px, py, pts) {
+    var num = 0, den = 0;
+    for (var i = 0; i < pts.length; i++) {
+      var dx = px - pts[i].x, dy = py - pts[i].y, r2 = dx * dx + dy * dy;
+      if (r2 < 0.01) return pts[i].d;
+      var w = 1 / (r2 * r2 > 0 ? r2 : 0.01);
+      num += w * pts[i].d; den += w;
+    }
+    return num / den;
+  }
+  function drawMap() {
+    var cv = $('depthMap'), wrap = cv.parentNode;
+    var size = Math.round(wrap.clientWidth * (window.devicePixelRatio || 1));
+    if (!size) return;
+    if (cv.width !== size) { cv.width = size; cv.height = size; }
+    var g = cv.getContext('2d'), S = state.mapSize, pts = state.points, px = size / S;
+    var bg = cssVar('--bg'), ink = cssVar('--ink'), line = cssVar('--line'), muted = cssVar('--muted'), accent = cssVar('--accent');
+    var c0 = hexToRgb(cssVar('--shallow')), c1 = hexToRgb(cssVar('--deep'));
+    g.fillStyle = bg; g.fillRect(0, 0, size, size);
+    var maxD = pts.length ? Math.max.apply(null, pts.map(function (p) { return p.d; })) : 0;
+    var minD = pts.length ? Math.min.apply(null, pts.map(function (p) { return p.d; })) : 0;
+    if (pts.length >= 2) {
+      var N = 72, cell = size / N, grid = [];
+      // Интерполяция только вблизи точек промера, дальше не выдумываем
+      var reach = Math.max(S * 0.18, 12);
+      for (var j = 0; j < N; j++) {
+        grid.push([]);
+        for (var i = 0; i < N; i++) {
+          var mx = (i + 0.5) / N * S - S / 2, my = S / 2 - (j + 0.5) / N * S;
+          var near = Infinity;
+          for (var k = 0; k < pts.length; k++) { var dd = Math.hypot(mx - pts[k].x, my - pts[k].y); if (dd < near) near = dd; }
+          grid[j].push(near > reach ? null : idw(mx, my, pts));
+        }
+      }
+      var span = Math.max(maxD, 0.5);
+      for (j = 0; j < N; j++) for (i = 0; i < N; i++) {
+        var v = grid[j][i]; if (v == null) continue;
+        var t = clamp(v / span, 0, 1);
+        g.fillStyle = 'rgb(' + Math.round(c0[0] + (c1[0] - c0[0]) * t) + ',' + Math.round(c0[1] + (c1[1] - c0[1]) * t) + ',' + Math.round(c0[2] + (c1[2] - c0[2]) * t) + ')';
+        g.fillRect(Math.floor(i * cell), Math.floor(j * cell), Math.ceil(cell) + 1, Math.ceil(cell) + 1);
+      }
+      // Изобаты через каждые 0,5 м (через 1 м, если глубже 6 м)
+      var step = maxD > 6 ? 1 : 0.5;
+      g.strokeStyle = ink; g.globalAlpha = 0.35; g.lineWidth = Math.max(1, size / 500);
+      g.beginPath();
+      for (j = 0; j < N; j++) for (i = 0; i < N; i++) {
+        var a = grid[j][i]; if (a == null) continue;
+        var ba = Math.floor(a / step);
+        if (i + 1 < N && grid[j][i + 1] != null && Math.floor(grid[j][i + 1] / step) !== ba) { g.moveTo((i + 1) * cell, j * cell); g.lineTo((i + 1) * cell, (j + 1) * cell); }
+        if (j + 1 < N && grid[j + 1][i] != null && Math.floor(grid[j + 1][i] / step) !== ba) { g.moveTo(i * cell, (j + 1) * cell); g.lineTo((i + 1) * cell, (j + 1) * cell); }
+      }
+      g.stroke(); g.globalAlpha = 1;
+    }
+    // Сетка и центр
+    g.strokeStyle = line; g.lineWidth = 1; g.globalAlpha = 0.6;
+    var gstep = S <= 100 ? 10 : S <= 250 ? 25 : S <= 400 ? 50 : 100;
+    g.beginPath();
+    for (var m = -Math.floor(S / 2 / gstep) * gstep; m <= S / 2; m += gstep) {
+      var xx = (m + S / 2) * px; g.moveTo(xx, 0); g.lineTo(xx, size); g.moveTo(0, xx); g.lineTo(size, xx);
+    }
+    g.stroke(); g.globalAlpha = 1;
+    g.strokeStyle = accent; g.lineWidth = Math.max(1.5, size / 300);
+    g.beginPath(); g.moveTo(size / 2 - 8, size / 2); g.lineTo(size / 2 + 8, size / 2); g.moveTo(size / 2, size / 2 - 8); g.lineTo(size / 2, size / 2 + 8); g.stroke();
+    // Точки
+    var fs = Math.max(11, Math.round(size / 42));
+    g.font = '600 ' + fs + 'px "JetBrains Mono", ui-monospace, monospace';
+    g.textBaseline = 'middle';
+    pts.forEach(function (p) {
+      var cx = (p.x + S / 2) * px, cy = (S / 2 - p.y) * px;
+      if (cx < 0 || cy < 0 || cx > size || cy > size) return;
+      g.fillStyle = accent; g.beginPath(); g.arc(cx, cy, Math.max(3, size / 160), 0, 7); g.fill();
+      var label = fmt(p.d);
+      g.lineWidth = 3; g.strokeStyle = bg; g.strokeText(label, cx + 6, cy - fs * 0.6);
+      g.fillStyle = ink; g.fillText(label, cx + 6, cy - fs * 0.6);
+    });
+    // Масштаб
+    g.fillStyle = muted; g.font = '500 ' + Math.round(fs * 0.9) + 'px "JetBrains Mono", ui-monospace, monospace';
+    g.textBaseline = 'alphabetic';
+    g.fillText('сетка ' + gstep + ' м · С ↑', 8, size - 8);
+    if (!pts.length) {
+      g.fillStyle = muted; g.textAlign = 'center';
+      g.fillText('Нажмите на место промера, чтобы поставить точку', size / 2, size / 2 - 22);
+      g.textAlign = 'start';
+    }
+    $('lgMin').textContent = pts.length ? '0 м' : 'мель';
+    $('lgMax').textContent = pts.length ? fmt(Math.max(maxD, 0.5)) + ' м' : 'глубина';
+    // Статистика
+    if (pts.length) {
+      var avg = pts.reduce(function (s, p) { return s + p.d; }, 0) / pts.length;
+      var drop = 0, dropAt = null;
+      for (var a1 = 0; a1 < pts.length; a1++) for (var b1 = a1 + 1; b1 < pts.length; b1++) {
+        var dist = Math.hypot(pts[a1].x - pts[b1].x, pts[a1].y - pts[b1].y);
+        if (dist > 1 && dist < S * 0.35) { var gr = Math.abs(pts[a1].d - pts[b1].d) / dist; if (gr > drop) { drop = gr; dropAt = [pts[a1], pts[b1]]; } }
+      }
+      $('mStats').innerHTML = '<span class="spec">точек ' + pts.length + '</span><span class="spec">мин ' + fmt(minD) + ' м</span><span class="spec">макс ' + fmt(maxD) + ' м</span><span class="spec">средняя ' + fmt(avg) + ' м</span>' +
+        (dropAt && drop > 0.05 ? '<span class="spec">самый крутой свал: ' + fmt(Math.min(dropAt[0].d, dropAt[1].d)) + '→' + fmt(Math.max(dropAt[0].d, dropAt[1].d)) + ' м</span>' : '');
+    } else $('mStats').innerHTML = '';
+    $('mJson').value = JSON.stringify({ spot: state.spot.id, lat: state.spot.lat, lon: state.spot.lon, size: state.mapSize, points: state.points });
+  }
+  function afterPointsChange() {
+    savePoints(); drawMap();
+    // Глубина для подбора: в холод ищем ямы, иначе средние глубины и свалы
+    if (state.points.length >= 3 && !state.cond.depthTouched) {
+      var ds = state.points.map(function (p) { return p.d; }).sort(function (a, b) { return a - b; });
+      var pick = phaseOf(current().w) === 'cold' ? ds[Math.floor(ds.length * 0.8)] : ds[Math.floor(ds.length / 2)];
+      state.cond.depth = round1(pick); $('cDepth').value = state.cond.depth; saveCond();
+      $('mMsg').textContent = 'Глубина для подбора приманок взята с карты: ' + fmt(pick) + ' м (' + (phaseOf(current().w) === 'cold' ? 'в холодной воде ищите самые глубокие места' : 'середина диапазона ваших промеров') + ').';
+    }
+    render();
+  }
+  function addPoint(x, y) {
+    var d = parseFloat(String($('mDepth').value).replace(',', '.'));
+    if (!isFinite(d) || d < 0) { $('mMsg').textContent = 'Сначала укажите глубину новой точки в метрах.'; return; }
+    state.points.push({ x: round1(x), y: round1(y), d: round1(d) });
+    $('mMsg').textContent = 'Точка ' + fmt(d) + ' м добавлена.';
+    afterPointsChange();
+  }
+  $('depthMap').addEventListener('click', function (e) {
+    var r = this.getBoundingClientRect(), S = state.mapSize;
+    addPoint((e.clientX - r.left) / r.width * S - S / 2, S / 2 - (e.clientY - r.top) / r.height * S);
+  });
+  $('mSize').addEventListener('change', function () { state.mapSize = +this.value; savePoints(); drawMap(); });
+  $('mUndo').addEventListener('click', function () { if (state.points.length) { state.points.pop(); $('mMsg').textContent = 'Последняя точка убрана.'; afterPointsChange(); } });
+  $('mClear').addEventListener('click', function () { if (state.points.length) { $('mConfirm').hidden = false; this.hidden = true; } });
+  function closeConfirm() { $('mConfirm').hidden = true; $('mClear').hidden = false; }
+  $('mNo').addEventListener('click', closeConfirm);
+  $('mYes').addEventListener('click', function () { state.points = []; closeConfirm(); $('mMsg').textContent = 'Карта очищена.'; afterPointsChange(); });
+  $('mGps').addEventListener('click', function () {
+    var msg = $('mMsg');
+    if (!navigator.geolocation) { msg.textContent = 'Геолокация в этом браузере недоступна.'; return; }
+    msg.textContent = 'Определяю место…';
+    navigator.geolocation.getCurrentPosition(function (pos) {
+      var s = state.spot, la = pos.coords.latitude, lo = pos.coords.longitude;
+      var x = (lo - s.lon) * 111320 * Math.cos(s.lat * Math.PI / 180), y = (la - s.lat) * 110540;
+      if (Math.abs(x) > state.mapSize / 2 || Math.abs(y) > state.mapSize / 2) { msg.textContent = 'Вы в ' + Math.round(Math.hypot(x, y)) + ' м от центра, это за пределами квадрата. Увеличьте размер участка.'; return; }
+      addPoint(x, y);
+    }, function () {
+      msg.textContent = 'Место определить не удалось. На странице claude.ai геолокация закрыта, она работает в отдельном HTML-файле, открытом в браузере телефона. Можно ставить точки нажатием на карту.';
+    }, { enableHighAccuracy: true, timeout: 15000 });
+  });
+  $('mCopy').addEventListener('click', function () {
+    var ta = $('mJson');
+    var done = function () { $('mMsg').textContent = 'Промеры скопированы. Сохраните текст в заметках.'; };
+    try { navigator.clipboard.writeText(ta.value).then(done, function () { ta.select(); $('mMsg').textContent = 'Текст выделен, скопируйте его вручную.'; }); }
+    catch (e) { ta.select(); $('mMsg').textContent = 'Текст выделен, скопируйте его вручную.'; }
+  });
+  $('mLoad').addEventListener('click', function () {
+    try {
+      var v = JSON.parse($('mJson').value);
+      if (!v || !Array.isArray(v.points)) throw 0;
+      state.points = v.points.filter(function (p) { return isFinite(p.x) && isFinite(p.y) && isFinite(p.d); });
+      if (v.size) { state.mapSize = +v.size; $('mSize').value = String(v.size); }
+      $('mMsg').textContent = 'Загружено точек: ' + state.points.length + '.';
+      afterPointsChange();
+    } catch (e) { $('mMsg').textContent = 'Не получилось прочитать текст. Вставьте JSON целиком, как он был скопирован.'; }
+  });
+  var rt; window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(drawMap, 150); });
+  try { window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', drawMap); } catch (e) {}
+  try { new MutationObserver(drawMap).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] }); } catch (e) {}
+
+  // ---------- Моя коробка ----------
+  function boxCount() { return WOBBLERS.filter(function (l) { return state.box[l.id]; }).length; }
+  function softCount() { var n = 0; SOFTS.forEach(function (l) { l.sizes.forEach(function (sz) { if (state.sbox[softId(l, sz)]) n++; }); }); return n; }
+  function softTotal() { return SOFTS.reduce(function (n, l) { return n + l.sizes.length; }, 0); }
+  function saveBox() { store('klev.box', JSON.stringify({ box: state.box, only: state.boxOnly, sbox: state.sbox, softOnly: state.softOnly })); }
+  function saveCustom() { store('klev.customWob', JSON.stringify(state.custom)); }
+  function saveCustomSoft() { store('klev.customSoft', JSON.stringify(state.customSoft)); }
+  function saveColors() { store('klev.colors', JSON.stringify(state.colors)); }
+  function rebuildCatalog() {
+    WOBBLERS = WOB_BASE.concat(state.custom.map(function (r) { return fromRaw(r, true); }));
+    var list = SOFT_BASE.map(function (l) { return Object.assign({}, l, { sizes: l.sizes.slice(), added: [] }); });
+    state.customSoft.forEach(function (r) {
+      var ex = list.filter(function (l) { return l.b.toLowerCase() === r[0].toLowerCase() && l.m.toLowerCase() === r[1].toLowerCase(); })[0];
+      if (ex) { if (ex.sizes.indexOf(r[3]) < 0) { ex.sizes.push(r[3]); ex.sizes.sort(function (a, b) { return a - b; }); ex.added.push(r[3]); } }
+      else list.push({ b: r[0], m: r[1], kind: r[2], sizes: [r[3]], f: r[4].split('').map(function (c) { return FCODE[c]; }), act: SOFT_ACT[r[2]] || 0.6, custom: true, added: [r[3]] });
+    });
+    SOFTS = list;
+  }
+  function colorEditor(id) {
+    var list = state.colors[id] || [];
+    return '<div class="bx-colors">' + list.map(function (c, i) { return chipHtml(c, 0, true, id, i); }).join('') +
+      '<span class="bx-add"><input type="text" list="colorNames" data-cin="' + esc(id) + '" placeholder="вписать цвет" aria-label="Новый цвет"><button type="button" data-add="' + esc(id) + '">Добавить</button></span></div>';
+  }
+  function renderBox() {
+    var q = $('boxSearch').value.trim().toLowerCase().replace(',', '.'), html = '';
+    var wob = state.boxTab === 'wob';
+    $('tabWob').setAttribute('aria-pressed', wob ? 'true' : 'false');
+    $('tabSoft').setAttribute('aria-pressed', wob ? 'false' : 'true');
+    $('customWob').hidden = !wob; $('customSoft').hidden = wob;
+    $('customSummary').textContent = wob ? 'Добавить свой воблер' : 'Добавить модель или размер силикона';
+    if (wob) {
+      $('boxHint').textContent = 'Отметьте воблеры, которые у вас есть, и впишите их цвета. Цвет можно выбрать из подсказок или написать своими словами. Тон определяется по названию, нажатие на цвет меняет тон вручную. Rigge 90 бывает в двух версиях, SP-SR и F: снимите отметку с той, которой у вас нет.';
+      var brands = BRANDS.slice();
+      WOBBLERS.forEach(function (l) { if (brands.indexOf(l.b) < 0) brands.push(l.b); });
+      html = brands.map(function (b) {
+        var items = WOBBLERS.filter(function (l) { return l.b === b && (!q || l.id.toLowerCase().indexOf(q) >= 0); });
+        if (!items.length) return '';
+        return '<div><h3>' + esc(b) + '</h3>' + items.map(function (l) {
+          var on = !!state.box[l.id];
+          return '<div class="bx-item"><div class="bx-head"><label><input type="checkbox" data-wid="' + esc(l.id) + '"' + (on ? ' checked' : '') + '><span>' + esc(l.m) +
+            ' <span class="note">' + l.size + ' мм</span></span></label>' + (l.custom ? '<button type="button" class="del" data-del="' + esc(l.id) + '">удалить</button>' : '') + '</div>' +
+            (on ? colorEditor(l.id) : '') + '</div>';
+        }).join('') + '</div>';
+      }).join('');
+    } else {
+      $('boxHint').textContent = 'Все модели и размеры силикона Keitech, DUO и Lucky John из каталога. Впишите цвета, которые у вас есть: размер сам отметится как ваш. Если нужного размера нет, добавьте его внизу.';
+      var sb = SOFT_BRANDS.slice();
+      SOFTS.forEach(function (l) { if (sb.indexOf(l.b) < 0) sb.push(l.b); });
+      html = sb.map(function (b) {
+        var models = SOFTS.filter(function (l) { return l.b === b; }).map(function (l) {
+          var sizes = l.sizes.filter(function (sz) { return !q || (l.b + ' ' + l.m + ' ' + sz).toLowerCase().indexOf(q) >= 0; });
+          if (!sizes.length) return '';
+          return '<p class="bx-model">' + esc(l.m) + ' <span class="note">' + KIND_RU[l.kind] + '</span></p>' + sizes.map(function (sz) {
+            var id = softId(l, sz), on = !!state.sbox[id], mine = l.added.indexOf(sz) >= 0;
+            return '<div class="bx-item"><div class="bx-head"><label><input type="checkbox" data-sid="' + esc(id) + '"' + (on ? ' checked' : '') + '><span>' + inch(sz) +
+              ' <span class="note">' + fmt(sz * 2.54) + ' см</span></span></label>' + (mine ? '<button type="button" class="del" data-sdel="' + esc(l.b + '|' + l.m + '|' + sz) + '">удалить</button>' : '') + '</div>' +
+              colorEditor(id) + '</div>';
+          }).join('');
+        }).join('');
+        return models ? '<div><h3>' + esc(b) + '</h3>' + models + '</div>' : '';
+      }).join('');
+    }
+    $('boxList').innerHTML = html || '<p class="note">Ничего не найдено. Добавьте модель через форму ниже.</p>';
+    $('boxCount').textContent = 'воблеров ' + boxCount() + ' из ' + WOBBLERS.length + ' · силикона ' + softCount() + ' из ' + softTotal();
+    $('srcAll').setAttribute('aria-pressed', state.boxOnly ? 'false' : 'true');
+    $('srcBox').setAttribute('aria-pressed', state.boxOnly ? 'true' : 'false');
+    $('softAll').setAttribute('aria-pressed', state.softOnly ? 'false' : 'true');
+    $('softBox').setAttribute('aria-pressed', state.softOnly ? 'true' : 'false');
+    $('bJson').value = JSON.stringify({ box: state.box, sbox: state.sbox, colors: state.colors, custom: state.custom, customSoft: state.customSoft });
+  }
+  function boxChanged(focusId) {
+    saveBox(); saveColors(); renderBox(); render();
+    if (focusId) {
+      var el = $('boxList').querySelector('[data-cin="' + focusId.replace(/"/g, '\\"') + '"]');
+      if (el) el.focus();
+    }
+  }
+  function addColor(id) {
+    var inp = $('boxList').querySelector('[data-cin="' + id.replace(/"/g, '\\"') + '"]');
+    var n = inp ? inp.value.trim() : '';
+    if (!n) { if (inp) inp.focus(); return; }
+    var list = state.colors[id] || (state.colors[id] = []);
+    if (!list.some(function (c) { return c.n.toLowerCase() === n.toLowerCase(); })) list.push({ n: n, t: '' });
+    if (id.indexOf('S|') === 0) state.sbox[id] = true; else state.box[id] = true;
+    boxChanged(id);
+  }
+  (function initBox() {
+    var v = loadJSON('klev.box');
+    state.box = {}; state.boxOnly = false; state.sbox = {}; state.softOnly = false; state.boxTab = 'wob';
+    if (v && v.box && typeof v.box === 'object') { state.box = v.box; state.boxOnly = !!v.only; }
+    else BOX_DEFAULT.forEach(function (id) { state.box[id] = true; });
+    if (v && v.sbox && typeof v.sbox === 'object') { state.sbox = v.sbox; state.softOnly = !!v.softOnly; }
+    var c = loadJSON('klev.customWob');
+    state.custom = Array.isArray(c) ? c.filter(function (r) { return Array.isArray(r) && r.length >= 11; }) : [];
+    var cs = loadJSON('klev.customSoft');
+    state.customSoft = Array.isArray(cs) ? cs.filter(function (r) { return Array.isArray(r) && r.length >= 5 && isFinite(r[3]); }) : [];
+    var cl = loadJSON('klev.colors');
+    state.colors = cl && typeof cl === 'object' ? cl : {};
+    rebuildCatalog();
+  })();
+  $('boxList').addEventListener('change', function (e) {
+    var d = e.target.dataset || {};
+    if (d.wid) { if (e.target.checked) state.box[d.wid] = true; else delete state.box[d.wid]; boxChanged(); }
+    else if (d.sid) { if (e.target.checked) state.sbox[d.sid] = true; else delete state.sbox[d.sid]; boxChanged(); }
+  });
+  $('boxList').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' && e.target.dataset && e.target.dataset.cin) { e.preventDefault(); addColor(e.target.dataset.cin); }
+  });
+  $('boxList').addEventListener('click', function (e) {
+    var t = e.target.closest('button'); if (!t) return;
+    var d = t.dataset;
+    if (d.add) addColor(d.add);
+    else if (d.cyc) {
+      var c = state.colors[d.cyc][+d.i], cur = c.t || tonesOf(c)[0] || '';
+      c.t = TONE_CYCLE[(TONE_CYCLE.indexOf(cur) + 1) % TONE_CYCLE.length];
+      boxChanged();
+    } else if (d.rm) {
+      state.colors[d.rm].splice(+d.i, 1);
+      if (!state.colors[d.rm].length) delete state.colors[d.rm];
+      boxChanged();
+    } else if (d.del) {
+      state.custom = state.custom.filter(function (r) { return r[0] + ' ' + r[1] !== d.del; });
+      delete state.box[d.del]; delete state.colors[d.del]; saveCustom(); rebuildCatalog(); boxChanged();
+    } else if (d.sdel) {
+      var k = d.sdel.split('|');
+      state.customSoft = state.customSoft.filter(function (r) { return !(r[0] === k[0] && r[1] === k[1] && String(r[3]) === k[2]); });
+      var sid = 'S|' + k[0] + ' ' + k[1] + ' ' + k[2];
+      delete state.sbox[sid]; delete state.colors[sid]; saveCustomSoft(); rebuildCatalog(); boxChanged();
+    }
+  });
+  $('boxSearch').addEventListener('input', renderBox);
+  $('tabWob').addEventListener('click', function () { state.boxTab = 'wob'; renderBox(); });
+  $('tabSoft').addEventListener('click', function () { state.boxTab = 'soft'; renderBox(); });
+  $('srcAll').addEventListener('click', function () { state.boxOnly = false; boxChanged(); });
+  $('srcBox').addEventListener('click', function () { state.boxOnly = true; boxChanged(); });
+  $('softAll').addEventListener('click', function () { state.softOnly = false; boxChanged(); });
+  $('softBox').addEventListener('click', function () { state.softOnly = true; boxChanged(); });
+  $('uAdd').addEventListener('click', function () {
+    var num = function (id) { return parseFloat(String($(id).value).replace(',', '.')); };
+    var b = $('uBrand').value.trim() || 'Мои', m = $('uModel').value.trim();
+    var size = num('uSize'), g = num('uG'), lo = num('uLo'), hi = num('uHi'), kind = $('uKind').value;
+    if (!m) { $('uMsg').textContent = 'Укажите название модели.'; return; }
+    if (!(size > 0) || !(g > 0) || !(lo >= 0) || !(hi >= lo)) { $('uMsg').textContent = 'Проверьте длину, вес и заглубление: «до» должно быть не меньше «от».'; return; }
+    var id = b + ' ' + m;
+    if (WOBBLERS.some(function (l) { return l.id.toLowerCase() === id.toLowerCase(); })) { $('uMsg').textContent = 'Такая модель уже есть в каталоге, отметьте её в списке.'; return; }
+    var tw = kind === 'top' ? [15, 28] : kind === 'crank' ? [9, 26] : kind === 'vib' ? [1, 24] : [4, 22];
+    var rec = [b, m, kind, size, g, $('uBuoy').value, kind === 'vib' ? 0 : lo, kind === 'vib' ? 99 : hi, $('uFish').value, tw[0], tw[1], kind === 'vib' || kind === 'crank' ? 1 : 0];
+    state.custom.push(rec); state.box[id] = true;
+    saveCustom(); rebuildCatalog(); boxChanged();
+    $('uMsg').textContent = '«' + m + '» добавлен в коробку, впишите его цвета в списке выше.'; $('uModel').value = '';
+  });
+  $('sBrand').addEventListener('change', function () { $('sBrandOtherWrap').hidden = this.value !== ''; });
+  $('sAdd').addEventListener('click', function () {
+    var b = $('sBrand').value || $('sBrandOther').value.trim(), m = $('sModel').value.trim();
+    var size = round1(parseFloat(String($('sSize').value).replace(',', '.')));
+    if (!b) { $('sMsg').textContent = 'Укажите фирму.'; return; }
+    if (!m) { $('sMsg').textContent = 'Укажите модель.'; return; }
+    if (!(size >= 1 && size <= 10)) { $('sMsg').textContent = 'Размер указывается в дюймах, от 1 до 10.'; return; }
+    var ex = SOFTS.filter(function (l) { return l.b.toLowerCase() === b.toLowerCase() && l.m.toLowerCase() === m.toLowerCase(); })[0];
+    if (ex && ex.sizes.indexOf(size) >= 0) { $('sMsg').textContent = 'Такой размер уже есть в списке.'; return; }
+    if (ex) { b = ex.b; m = ex.m; }
+    state.customSoft.push([b, m, $('sKind').value, size, $('sFish').value]);
+    var sid = 'S|' + b + ' ' + m + ' ' + size;
+    state.sbox[sid] = true;
+    saveCustomSoft(); rebuildCatalog(); state.boxTab = 'soft'; boxChanged(sid);
+    $('sMsg').textContent = (ex ? 'Размер ' : 'Модель ') + inch(size) + ' добавлен' + (ex ? '' : 'а') + ', впишите цвета.';
+  });
+  $('bCopy').addEventListener('click', function () {
+    var ta = $('bJson');
+    try { navigator.clipboard.writeText(ta.value).then(function () { $('bMsg').textContent = 'Скопировано. Сохраните текст в заметках.'; }, function () { ta.select(); $('bMsg').textContent = 'Текст выделен, скопируйте его вручную.'; }); }
+    catch (e) { ta.select(); $('bMsg').textContent = 'Текст выделен, скопируйте его вручную.'; }
+  });
+  $('bLoad').addEventListener('click', function () {
+    try {
+      var v = JSON.parse($('bJson').value);
+      if (!v || typeof v !== 'object' || typeof v.box !== 'object') throw 0;
+      state.box = v.box || {}; state.sbox = v.sbox || {}; state.colors = v.colors || {};
+      state.custom = Array.isArray(v.custom) ? v.custom : []; state.customSoft = Array.isArray(v.customSoft) ? v.customSoft : [];
+      saveCustom(); saveCustomSoft(); rebuildCatalog(); boxChanged();
+      $('bMsg').textContent = 'Коробка загружена.';
+    } catch (e) { $('bMsg').textContent = 'Не получилось прочитать текст. Вставьте JSON целиком, как он был скопирован.'; }
+  });
+
+  // ---------- UI ----------
+  $('spotgroups').innerHTML = GROUPS.map(function (gr) {
+    return '<div class="spotgroup"><span class="glbl">' + gr[1] + '</span><div class="spots" role="group" aria-label="' + gr[1] + '">' +
+      SPOTS.filter(function (s) { return s.type === gr[0]; }).map(function (s) {
+        return '<button type="button" data-id="' + s.id + '" aria-pressed="false"' + (s.mine ? ' class="mine"' : '') + '>' + s.name + '</button>';
+      }).join('') + '</div></div>';
+  }).join('');
+  function markSpot() {
+    Array.prototype.forEach.call(document.querySelectorAll('.spots button'), function (b) { b.setAttribute('aria-pressed', b.dataset.id === state.spot.id ? 'true' : 'false'); });
+  }
+  $('spotgroups').addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    state.spot = SPOTS.filter(function (s) { return s.id === b.dataset.id; })[0];
+    store('klev.spot', state.spot.id); markSpot(); $('mMsg').textContent = ''; closeConfirm(); loadSpot();
+  });
+
+  [['cFish', 'fish'], ['cTurb', 'turb'], ['cLight', 'light'], ['cCur', 'cur']].forEach(function (p) {
+    $(p[0]).addEventListener('change', function () { state.cond[p[1]] = p[1] === 'cur' ? +this.value : this.value; saveCond(); render(); });
+  });
+  $('cDepth').addEventListener('input', function () {
+    var v = parseFloat(this.value.replace(',', '.'));
+    if (!isNaN(v) && v > 0) { state.cond.depth = v; state.cond.depthTouched = true; saveCond(); render(); }
+  });
+
+  function syncInputs() {
+    var m = state.manual || {};
+    $('iP').value = m.p != null ? m.p : ''; $('iA').value = m.a != null ? m.a : ''; $('iW').value = m.w != null ? m.w : '';
+    $('iT').value = m.trend != null ? m.trend : 'flat';
+  }
+  function readInputs() {
+    var m = {}, any = false;
+    [['iP', 'p'], ['iA', 'a'], ['iW', 'w']].forEach(function (x) {
+      var v = parseFloat($(x[0]).value.replace(',', '.'));
+      if (!isNaN(v)) { m[x[1]] = v; any = true; }
+    });
+    if ($('iT').dataset.touched) { m.trend = $('iT').value; any = true; }
+    state.manual = any ? m : null;
+    store('klev.manual', JSON.stringify(state.manual));
+    render();
+  }
+  ['iP', 'iA', 'iW'].forEach(function (id) { $(id).addEventListener('input', readInputs); });
+  $('iT').addEventListener('change', function () { $('iT').dataset.touched = '1'; readInputs(); });
+  $('reset').addEventListener('click', function () {
+    state.manual = null; delete $('iT').dataset.touched; store('klev.manual', 'null'); syncInputs(); render();
+  });
+
+  var saved = load('klev.spot');
+  if (saved) { var f = SPOTS.filter(function (s) { return s.id === saved; })[0]; if (f) state.spot = f; }
+  try { var mm = JSON.parse(load('klev.manual')); if (mm && typeof mm === 'object') { state.manual = mm; if (mm.trend != null) $('iT').dataset.touched = '1'; } } catch (e) {}
+  markSpot(); syncInputs(); renderBox(); loadSpot();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(drawMap);
+})();
+</script>
+
+</body></html>
